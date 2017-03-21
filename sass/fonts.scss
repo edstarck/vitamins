@@ -1,8 +1,10 @@
 @import "bourbon";
 
-@include font-face("SFUIDisplay-Light", "../fonts/SFUIDisplay-Light/SFUIDisplay-Light", $file-formats: woff);
-@include font-face("SFUIDisplay-Semibold", "../fonts/SFUIDisplay-Semibold/SFUIDisplay-Semibold", $file-formats: woff);
-@include font-face("CorkiRounded", "../fonts/CorkiRounded/CorkiRounded", $file-formats: woff);
-@include font-face("Spslclarendonc", "../fonts/SPSL/spslclarendonc-webfont", $file-formats: woff);
-@include font-face("Spslclarendonc-bold", "../fonts/SPSL/spslclarendonc-bold-webfont", $file-formats: woff);
-@include font-face("DomCasualNormal", "../fonts/DomCasual/DomCasualNormal", $file-formats: woff);
+@include font-face("SFUIDisplay-Light", "../fonts/SFUIDisplay-Light/SFUIDisplay-Light", $file-formats: woff ttf);
+@include font-face("SFUIDisplay-Semibold", "../fonts/SFUIDisplay-Semibold/SFUIDisplay-Semibold", $file-formats: woff ttf);
+@include font-face("CorkiRounded", "../fonts/CorkiRounded/CorkiRounded", $file-formats: woff ttf);
+@include font-face("Spslclarendonc", "../fonts/SPSL/spslclarendonc-webfont", $file-formats: woff ttf);
+@include font-face("Spslclarendonc-bold", "../fonts/SPSL/spslclarendonc-bold-webfont", $file-formats: woff ttf);
+@include font-face("DomCasualNormal", "../fonts/DomCasual/DomCasualNormal", $file-formats: woff ttf);
+@include font-face("DINRoundPro-Medium", "../fonts/DINRoundPro-Medium/DINRoundPro-Medium", $file-formats: woff ttf);
+@include font-face("DINRoundPro-Bold", "../fonts/DINRoundPro-Bold/DINRoundPro-Bold", $file-formats: woff ttf);
