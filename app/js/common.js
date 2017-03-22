@@ -17,7 +17,7 @@ $(function() {
   } else {
     McButton.velocity("reverse");
     McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] })
-    .velocity({ top: "65%" }, {duration: 200, easing: "swing"});
+    .velocity({ top: "86%" }, {duration: 200, easing: "swing"});
     McBar1.velocity("reverse", {delay: 800});
   }
   });
@@ -217,7 +217,7 @@ $(function() {
     } else {
       McButton.velocity("reverse");
       McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] })
-            .velocity({ top: "65%" }, {duration: 200, easing: "swing"});
+            .velocity({ top: "86%" }, {duration: 200, easing: "swing"});
       McBar1.velocity("reverse", {delay: 800});
     }
   })

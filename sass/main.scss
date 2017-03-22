@@ -131,16 +131,16 @@ fieldset {
 }
 .gumburger {
   position: fixed;
-  width: 30px;
-  height: 31px;
-  top: 22px;
-  left: 280px;
+  width: 20px;
+  height: 18px;
+  top: 28px;
+  left: 270px;
   z-index: 1000;
   display: none;
 }
 .McButton {
-  $bar-w: 30px;
-  $bar-h: 3px;
+  $bar-w: 20px;
+  $bar-h: 2px;
   $bar-color: #fff;
   position: absolute;
   top: 50%;
@@ -148,25 +148,25 @@ fieldset {
   margin-left: -($bar-w /2);
   margin-top: -($bar-w /2);
   width: $bar-w;
-  height: ($bar-w *3) /4;
+  height: 18px;
   cursor: pointer;
   b {
       position: absolute;
       right: 0;
-      width: 30px;
+      width: 20px;
       height: $bar-h;
       background-color: $bar-color;
       border-radius: 2px;
       &:nth-child(1) {
           top: 0;
-          width: 25px;
+          width: 20px;
       }
       &:nth-child(2) {
-          top: 32%;
-          width: 21px;
+          top: 42%;
+          width: 20px;
       }
       &:nth-child(3) {
-          top: 61%;
+          top: 86%;
       }
   }
 }
@@ -297,18 +297,26 @@ fieldset {
 }
 .label {
   position: absolute;
-  width: 112px;
-  height: 112px;
-  top: -7px;
-  left: -8px;
+  width: 82px;
+  height: 82px;
+  top: 20px;
+  left: 20px;
   z-index: 30;
   &-1 {
-      background-image: url("../img/picture/item-label-1.png");
-      background-repeat: no-repeat;
+    background-image: url("../img/icons/End.svg");
+    background-repeat: no-repeat;
   }
   &-2 {
-      background-image: url("../img/picture/item-label-2.png");
-      background-repeat: no-repeat;
+    background-image: url("../img/icons/Middle.svg");
+    background-repeat: no-repeat;
+  }
+  &-3 {
+    background-image: url("../img/icons/Best-Taste.svg");
+    background-repeat: no-repeat;
+  }
+  &-4 {
+    background-image: url("../img/icons/Begin.svg");
+    background-repeat: no-repeat;
   }
 }
 .star {
@@ -429,8 +437,9 @@ fieldset {
       }
   }
   &_wrap {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &_enter {
       display: none;
@@ -478,12 +487,12 @@ fieldset {
 .enter {
   max-width: 414px;
   min-width: 98px;
-  height: 40px;
+  height: 30px;
   display: none;
   align-items: center;
   justify-content: space-around;
   border: 2px solid white;
-  border-radius: 5px;
+  border-radius: 8px;
   box-sizing: border-box;
   background-color: #fff;
   @media (min-width: 980px) {
@@ -511,7 +520,7 @@ fieldset {
       content: '';
       width: 2px;
       height: 21px;
-      top: 4px;
+      top: 5px;
       right: 0;
       background-color: $color-orange;
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -628,6 +637,39 @@ fieldset {
   display: none;
 }
 
+.header--inner {
+  padding: 0;
+  height: 70px;
+  transform: translateZ(0);
+  .logo--mobile {
+    display: block;
+    margin-top: 4px;
+  }
+  .enter--mobile {
+    display: flex;
+    max-width: 210px;
+    margin: -50px auto 0 auto;
+  }
+  .slogan--mobile {
+    max-width: 183px;
+    display: block;
+    margin-left: auto;
+    margin-top: -47px;
+    padding-top: 2px;
+    text-align: right;
+    .header_phone {
+      font-size: 27px;
+      text-shadow: 2px 1px 2px transparent;
+    }
+    .slogan_text {
+      width: auto;
+      font-size: 10px;
+      text-shadow: 2px 1px 2px transparent;
+      text-align: center;
+    }
+  }
+}
+
 .fixed-nav {
   .header {
     position: fixed;
@@ -653,12 +695,13 @@ fieldset {
     .enter--mobile {
       display: flex;
       max-width: 210px;
-      margin: -54px auto 0 auto;
+      margin: -50px auto 0 auto;
     }
     .slogan--mobile {
+      max-width: 183px;
       display: block;
       margin-left: auto;
-      margin-top: -54px;
+      margin-top: -47px;
       padding-top: 2px;
       text-align: right;
       .header_phone {
@@ -669,6 +712,7 @@ fieldset {
         width: auto;
         font-size: 10px;
         text-shadow: 2px 1px 2px transparent;
+        text-align: center;
       }
     }
   }
@@ -1390,8 +1434,8 @@ a.header_enter--mobile.enter.enter_toggle {
     }
   }
   &_label {
-    top: -5px;
-    left: -4px;
+    top: 20px;
+    left: 20px;
   }
   &_picture {
     margin: 0;
@@ -2938,6 +2982,13 @@ opacity: 0;
   font-family: "DINRoundPro-Medium", sans-serif;
   font-size: 16px;
   color: #ff5d3c;
+  cursor: pointer;
+  transition: all .4s;
+  &:hover {
+    color: #6d4c30;
+    border: solid 2px #6d4c30;
+    transition: all .4s;
+  }
 }
 
 .overlay {
