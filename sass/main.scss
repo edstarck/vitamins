@@ -50,17 +50,16 @@ fieldset {
   border: 0;
 }
 .btn {
-  height: 40px;
+  width: 120px;
+  height: 50px;
   display: inline-block;
-  padding: 0 15px;
   margin: 0 auto;
   color: #fff;
-  font-family: "Spslclarendonc", sans-serif;
-  font-size: 14px;
-  background-color: #b1c739;
-  border: 2px solid white;
-  border-radius: 5px;
-  box-shadow: 0 0 2px #965a30;
+  font-family: "DINRoundPro-Medium", sans-serif;
+  font-size: 16px;
+  background-color: #b2c543;
+  border: 0;
+  border-radius: 10px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -70,40 +69,39 @@ fieldset {
   transition: all .3s ease;
   white-space: nowrap;
   box-sizing: border-box;
-  line-height: 2.8;
-  @media (min-width: 480px) {
-      width: auto;
-  }
+  line-height: 3;
   @media (min-width: 670px) {
       margin: 0;
   }
   &:hover {
-      background-color: #99ae21;
-      transition: all .3s ease;
+    background-color: #99ae21;
+    transition: all .3s ease;
   }
   &--red {
-      width: 148px;
-      margin-left: 10px;
-      background-color: #ff5a42;
+    margin-left: 10px;
+    background-color: #ff5a42;
+    transition: all .3s ease;
+    @media (min-width: 480px) {
+      margin-left: 15px;
+    }
+    &:hover {
+      background-color: #ea4b2f;
       transition: all .3s ease;
-      @media (min-width: 480px) {
-          margin-left: 15px;
-      }
-      &:hover {
-          background-color: #ea4b2f;
-          transition: all .3s ease;
-      }
+    }
   }
   &--facebook {
-      background-color: #3b5998;
-      box-shadow: 0 0 2px #3b5998;
-      &:hover {
-          background-color: #203c77;
-          transition: all .3s ease;
-      }
+    width: 250px;
+    background-color: #3b5998;
+    &:hover {
+      background-color: #203c77;
+      transition: all .3s ease;
+    }
   }
   &--reg {
-      min-width: 270px;
+    width: 250px;
+  }
+  &--lg {
+    width: 250px;
   }
 }
 .wrap {
@@ -870,12 +868,15 @@ a.header_enter--mobile.enter.enter_toggle {
       padding-left: 10px;
       background-color: #fff;
       color: $color-gray;
-      font-family: "Spslclarendonc-bold", sans-serif;
+      font-family: "DINRoundPro-Medium", sans-serif;
       font-size: 28px;
       line-height: 1;
   }
   &_order {
       margin-bottom: 25px;
+  }
+  .btn {
+    color: #fff;
   }
 }
 .slideshow {
@@ -1362,7 +1363,7 @@ a.header_enter--mobile.enter.enter_toggle {
       width: 100%;
       flex-basis: 392px;
       flex-grow: 0;
-      flex-shrink: 1;
+      flex-shrink: 0;
       border-radius: 16px;
       background-color: #fff;
       flex-direction: column;
@@ -2777,6 +2778,9 @@ transition: opacity 0.35s ease-in-out;
       @media (min-width: 670px) {
           display: block;
       }
+  }
+  .section-title {
+    padding-top: 0;
   }
 }
 .modal_title-price {
