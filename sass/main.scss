@@ -6,14 +6,19 @@
 @import "app/libs/csshake/csshake-slow";
 @import "app/libs/popup/magnific-popup";
 
+html {
+  height: 100%;
+}
+
 body {
   position: relative;
+  min-width: 320px;
+  height: 100%;
   margin: 0;
   font-size: 16px;
-  min-width: 320px;
-  position: relative;
   line-height: 1.6;
   font-family: "SFUIDisplay-Light", sans-serif;
+  background-color: #fff6dc;
   overflow: auto;
   overflow: initial;
   -webkit-backface-visibility: hidden;
@@ -105,7 +110,12 @@ fieldset {
   }
 }
 .wrap {
-  background-color: #fff6dc;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &__content {
+    flex: 1 0 auto;
+  }
   &_inner {
       position: relative;
       max-width: 1280px;
@@ -1652,6 +1662,7 @@ a.header_enter--mobile.enter.enter_toggle {
 .footer {
   position: relative;
   background-color: $color-dark-brown;
+  flex: 0 0 auto;
   &_heading {
     display: none;
     position: relative;

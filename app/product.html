@@ -29,441 +29,443 @@
 <body>
 
   <div class="wrap">
-    <header class="header header--inner">
-      <div class="wrap_inner">
-        <div class="logo logo--mobile">
-          <a href="/">
-            <img src="img/logo.svg" alt="Витамины">
-          </a>
-        </div>
-        <div class="gumburger">
-          <a class="trigger-overlay gumburger__link McButton" href="" data="hamburger-menu">
-              <b></b>
-              <b></b>
-              <b></b>
-          </a>
-        </div>
-        <div class="enter enter--mobile">
-            <a href="#modal-login" class="enter_link link-popup">вход</a>
-            <a href="#modal-reg" class="enter_link link-popup">регистрация</a>
-        </div>
-        <div class="slogan slogan--mobile">
-            <a href="tel:84955405186" class="header_phone">
-                8 495 540 <i class="icon-dot"></i> 51 <i class="icon-dot"></i> 86
-            </a>
-            <div class="slogan_text">
-                Фрукты, овощи, сухофрукты со вкусом <br>— такие, какими они и должны быть
+    <div class="wrap__content">
+        <header class="header header--inner">
+          <div class="wrap_inner">
+            <div class="logo logo--mobile">
+              <a href="/">
+                <img src="img/logo.svg" alt="Витамины">
+              </a>
             </div>
-        </div>
-      </div>
-    </header>
-
-    <main class="content">
-        <section class="product">
-            <div class="wrap_inner">
-                <div class="product_wrap">
-                    <div class="slideshow">
-                        <div class="product_picture slideshow__display">
-                            <div class="product_label label label-1"></div>
-                            <figure>
-                                <img src="img/picture/orange.jpg" alt="">
-                            </figure>
-                        </div>
-                        <ul class="slideshow__list">
-                          <li class="slideshow__item slideshow__item_active">
-                            <a class="slideshow__pic" href="#">
-                            <img src="img/picture/orange.jpg" alt="" />
-                            </a>
-                          </li>
-                          <li class="slideshow__item ">
-                            <a class="slideshow__pic" href="#">
-                              <img src="img/picture/grape.jpg" alt="" />
-                            </a>
-                          </li>
-                          <li class="slideshow__item">
-                            <a class="slideshow__pic" href="#">
-                              <img src="img/picture/sliva.jpg" alt="" />
-                            </a>
-                          </li>
-                        </ul>
-                    </div>
-                    <div class="product_info">
-                        <h1 class="product_title">Сочные апельсины</h1>
-                        <div class="product_reviews">
-                            <span>Оценка покупателей:</span>
-                            <div class="product_rate rate">
-                                <div class="star star--full"></div>
-                                <div class="star star--full"></div>
-                                <div class="star star--full"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                            </div>
-                            <span class="product_proeties">(31)</span>
-                        </div>
-                        <div class="product_season">
-                            <span>Сезон:</span>
-                            <span>сентябрь – декабрь</span>
-                        </div>
-                        <div class="product_categories">
-                            <span>Категория:</span>
-                            <a href="">Груши </a>
-                        </div>
-                        <div class="product_country">
-                            <span>Страна:</span>
-                            <a href="">ЮАР</a>
-                            <span class="product_proeties">(10 000 км от Москвы)</span>
-                        </div>
-                        <div class="product_description">
-                            <p>
-                                С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
-                            </p>
-                        </div>
-                        <div class="product_order price-num">
-                            <div class="number">
-                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
-                                <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
-                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
-                            </div>
-                            <span class="product_price">352 P</span>
-                        </div>
-                        <a href="#modal-reg--order" class="btn link-popup btn--lg">оформить</a>
-                    </div>
+            <div class="gumburger">
+              <a class="trigger-overlay gumburger__link McButton" href="" data="hamburger-menu">
+                  <b></b>
+                  <b></b>
+                  <b></b>
+              </a>
+            </div>
+            <div class="enter enter--mobile">
+                <a href="#modal-login" class="enter_link link-popup">вход</a>
+                <a href="#modal-reg" class="enter_link link-popup">регистрация</a>
+            </div>
+            <div class="slogan slogan--mobile">
+                <a href="tel:84955405186" class="header_phone">
+                    8 495 540 <i class="icon-dot"></i> 51 <i class="icon-dot"></i> 86
+                </a>
+                <div class="slogan_text">
+                    Фрукты, овощи, сухофрукты со вкусом <br>— такие, какими они и должны быть
                 </div>
             </div>
-        </section>
-        <section class="taste">
-            <div class="wrap_inner">
-                <h2 class="section-title">Арифметика вкуса</h2>
-                <div class="taste_fruit fruit">
-                    <div class="fruit_grid">
-                        <div class="fruit_list">
-                            <div data-fruit="orange" class="fruit_item fruit_item--orange">
-                                <img src="img/picture/orange.png" alt="aпельсин">
+          </div>
+        </header>
+
+        <main class="content">
+            <section class="product">
+                <div class="wrap_inner">
+                    <div class="product_wrap">
+                        <div class="slideshow">
+                            <div class="product_picture slideshow__display">
+                                <div class="product_label label label-1"></div>
+                                <figure>
+                                    <img src="img/picture/orange.jpg" alt="">
+                                </figure>
                             </div>
-                            <div data-fruit="wm" class="fruit_item fruit_item--wm">
-                                <img src="img/picture/wm.png" alt="арбуз">
-                            </div>
-                            <div data-fruit="kiwi" class="fruit_item fruit_item--kiwi">
-                                <img src="img/picture/kiwi.png" alt="киви">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fruit_text">
-                        <div data-text="main" class="fruit_text-wrap">
-                            <span>
-                                Стоимость наших продуктов складывается из трех компонентов:
-                            </span>
-                            <ul class="fruit_text-list">
-                                <li class="fruit_text-item fruit_text-item--orange">
-                                    Закупочная цена
-                                </li>
-                                <li class="fruit_text-item fruit_text-item--wm">
-                                    Упаковка
-                                </li>
-                                <li class="fruit_text-item fruit_text-item--kiwi">
-                                    Добавочная ценность
-                                </li>
+                            <ul class="slideshow__list">
+                              <li class="slideshow__item slideshow__item_active">
+                                <a class="slideshow__pic" href="#">
+                                <img src="img/picture/orange.jpg" alt="" />
+                                </a>
+                              </li>
+                              <li class="slideshow__item ">
+                                <a class="slideshow__pic" href="#">
+                                  <img src="img/picture/grape.jpg" alt="" />
+                                </a>
+                              </li>
+                              <li class="slideshow__item">
+                                <a class="slideshow__pic" href="#">
+                                  <img src="img/picture/sliva.jpg" alt="" />
+                                </a>
+                              </li>
                             </ul>
-                            <span>
-                                Чтобы узнать подробнее о каждом из них, наведите курсор на нужный сектор в левой части экрана.
-                            </span>
                         </div>
-                        <div data-text="orange" class="fruit_text-wrap fruit_text-wrap--addishional">
-                            <h3 class="fruit_title">Закупочная цена</h3>
-                            <p>
-                                Премиальные сорта — основа нашего ассортимента. Чтобы получать лучшие партии, мы не торгуемся, а выстраиваем экологичные отношения с проверенными поставщиками. И даже таких у нас по 2-3 на каждую позицию — если не нравится у одного, мы идём к другому, открываем каждую коробку и проверяем качество и внешний вид. В итоге — получаем лучший товар по лояльной цене.
+                        <div class="product_info">
+                            <h1 class="product_title">Сочные апельсины</h1>
+                            <div class="product_reviews">
+                                <span>Оценка покупателей:</span>
+                                <div class="product_rate rate">
+                                    <div class="star star--full"></div>
+                                    <div class="star star--full"></div>
+                                    <div class="star star--full"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                                <span class="product_proeties">(31)</span>
+                            </div>
+                            <div class="product_season">
+                                <span>Сезон:</span>
+                                <span>сентябрь – декабрь</span>
+                            </div>
+                            <div class="product_categories">
+                                <span>Категория:</span>
+                                <a href="">Груши </a>
+                            </div>
+                            <div class="product_country">
+                                <span>Страна:</span>
+                                <a href="">ЮАР</a>
+                                <span class="product_proeties">(10 000 км от Москвы)</span>
+                            </div>
+                            <div class="product_description">
+                                <p>
+                                    С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
+                                </p>
+                            </div>
+                            <div class="product_order price-num">
+                                <div class="number">
+                                    <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                    <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                    <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                </div>
+                                <span class="product_price">352 P</span>
+                            </div>
+                            <a href="#modal-reg--order" class="btn link-popup btn--lg">оформить</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="taste">
+                <div class="wrap_inner">
+                    <h2 class="section-title">Арифметика вкуса</h2>
+                    <div class="taste_fruit fruit">
+                        <div class="fruit_grid">
+                            <div class="fruit_list">
+                                <div data-fruit="orange" class="fruit_item fruit_item--orange">
+                                    <img src="img/picture/orange.png" alt="aпельсин">
+                                </div>
+                                <div data-fruit="wm" class="fruit_item fruit_item--wm">
+                                    <img src="img/picture/wm.png" alt="арбуз">
+                                </div>
+                                <div data-fruit="kiwi" class="fruit_item fruit_item--kiwi">
+                                    <img src="img/picture/kiwi.png" alt="киви">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fruit_text">
+                            <div data-text="main" class="fruit_text-wrap">
+                                <span>
+                                    Стоимость наших продуктов складывается из трех компонентов:
+                                </span>
+                                <ul class="fruit_text-list">
+                                    <li class="fruit_text-item fruit_text-item--orange">
+                                        Закупочная цена
+                                    </li>
+                                    <li class="fruit_text-item fruit_text-item--wm">
+                                        Упаковка
+                                    </li>
+                                    <li class="fruit_text-item fruit_text-item--kiwi">
+                                        Добавочная ценность
+                                    </li>
+                                </ul>
+                                <span>
+                                    Чтобы узнать подробнее о каждом из них, наведите курсор на нужный сектор в левой части экрана.
+                                </span>
+                            </div>
+                            <div data-text="orange" class="fruit_text-wrap fruit_text-wrap--addishional">
+                                <h3 class="fruit_title">Закупочная цена</h3>
+                                <p>
+                                    Премиальные сорта — основа нашего ассортимента. Чтобы получать лучшие партии, мы не торгуемся, а выстраиваем экологичные отношения с проверенными поставщиками. И даже таких у нас по 2-3 на каждую позицию — если не нравится у одного, мы идём к другому, открываем каждую коробку и проверяем качество и внешний вид. В итоге — получаем лучший товар по лояльной цене.
 
-                            </p>
-                        </div>
-                        <div data-text="kiwi" class="fruit_text-wrap fruit_text-wrap--addishional">
-                            <h3 class="fruit_title">Добавочная ценность</h3>
-                            <p>
-                                После закупки товар попадает в наш распределительный центр. Там фрукты и овощи выкладываются и, если надо, дозревают. Если мы видим, что товар потерял надлежащий внешний вид и свойства, мы его списываем. Доставка по Москве — недешевое удовольствие, но аренда магазина — существенно дороже. Поэтому по сопоставимым сортам мы дешевле любого розничного магазина или сети.
+                                </p>
+                            </div>
+                            <div data-text="kiwi" class="fruit_text-wrap fruit_text-wrap--addishional">
+                                <h3 class="fruit_title">Добавочная ценность</h3>
+                                <p>
+                                    После закупки товар попадает в наш распределительный центр. Там фрукты и овощи выкладываются и, если надо, дозревают. Если мы видим, что товар потерял надлежащий внешний вид и свойства, мы его списываем. Доставка по Москве — недешевое удовольствие, но аренда магазина — существенно дороже. Поэтому по сопоставимым сортам мы дешевле любого розничного магазина или сети.
 
-                            </p>
-                        </div>
-                        <div data-text="wm" class="fruit_text-wrap fruit_text-wrap--addishional">
-                            <h3 class="fruit_title">Упаковка</h3>
-                            <p>
-                               Иногда мы тратим на упаковку до 3% стоимости заказа. Это значит, что мы используем только самые качественные упаковочные материалы, заворачиваем в салфетки каждый помидор и каждый персик, тщательно контролируем сборку заказа.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="taste_rule rule">
-                    <h2 class="section-title">Гарантия вкуса</h2>
-                    <p class="rule_text text-page">
-                        Если вы считаете, что мы привезли плохой товар, позвоните нам по телефону 8 (495) 540-51-86 и назовите номер заказа. Мы сделаем замену на эту сумму в следующем заказе или вернем вам деньги.
-                    </p>
-                    <div class="rule_list">
-                        <div class="rule_brick">
-                            <figure class="rule_picture shake-slow">
-                                <img src="img/icons/taste_01.svg" alt="">
-                            </figure>
-                            <span class="rule_title">Плохой товар</span>
-                            <span class="rule_content">
-                                Расскажите, если вам достался испорченный или недозрелый товар.
-                            </span>
-                        </div>
-                        <div class="rule_brick rule_brick--separator">
-                            <figure class="rule_picture">
-                                <img src="img/icons/arrow.svg" alt="">
-                            </figure>
-                        </div>
-                        <div class="rule_brick">
-                            <figure class="rule_picture shake-slow">
-                                <img src="img/icons/taste_02.svg" alt="">
-                            </figure>
-                            <span class="rule_title rule_title--yellow">Звонок оператору</span>
-                            <span class="rule_content">
-                                Оставьте заявку на замену товара или возврат денег по телефону.
-                            </span>
-                        </div>
-                        <div class="rule_brick rule_brick--separator">
-                            <figure class="rule_picture">
-                                <img src="img/icons/arrow.svg" alt="">
-                            </figure>
-                        </div>
-                        <div class="rule_brick">
-                            <figure class="rule_picture shake-slow">
-                                <img src="img/icons/taste_03.svg" alt="">
-                            </figure>
-                            <span class="rule_title rule_title--green-light">Новый товар</span>
-                            <span class="rule_content">
-                                Получите новый товар или компенсацию в деньгах.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="taste_additional additional">
-                    <h2 class="section-title">Дополните заказ фруктами на пике сезона</h2>
-                    <p class="rule_text text-page">
-                        Если вам требуются продукты, полностью готовые к употреблению, то мы их помоем и привезем в специальной упаковке. Дописываем текст про упаковку и взвешивание. И еще пара строк про доставку и всё такое. А далее чуть подробней.
-                    </p>
-                    <div class="taste_carousel carousel">
-                        <div class="carousel_container">
-                            <div class="carousel_wrapper">
-                                <div class="carousel_item item">
-                                    <a href="" class="carousel_link">
-                                        <div class="item_label label label-2"></div>
-                                        <figure class="item_picture">
-                                            <img src="img/picture/product1.jpg" alt="">
-                                        </figure>
-                                        <div class="item_body">
-                                            <h3 class="item_title">Сочные апельсины</h3>
-                                            <p class="item_content">
-                                                С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <div class="item_order">
-                                        <div class="price-num">
-                                            <div class="number">
-                                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
-                                                <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
-                                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
-                                            </div>
-                                            <span class="item_total">3кг</span>
-                                            <span class="item_price">352 P</span>
-                                        </div>
-                                        <a href="" class="item_link">заказать</a>
-                                    </div>
-                                </div>
-                                <div class="carousel_item item">
-                                    <a href="" class="carousel_link">
-                                        <div class="item_label label label-2"></div>
-                                        <figure class="item_picture">
-                                            <img src="img/picture/product2.jpg" alt="">
-                                        </figure>
-                                        <div class="item_body">
-                                            <h3 class="item_title">Виноград «Изабелла»</h3>
-                                            <p class="item_content">
-                                                С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <div class="item_order">
-                                        <div class="price-num">
-                                            <div class="number">
-                                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
-                                                <span>
-                                                    <span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
-                                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
-                                            </div>
-                                            <span class="item_total">3кг</span>
-                                            <span class="item_price">352 P</span>
-                                        </div>
-                                        <a href="" class="item_link">заказать</a>
-                                    </div>
-                                </div>
-                                <div class="carousel_item item">
-                                    <a href="" class="carousel_link">
-                                        <div class="item_label label label-2"></div>
-                                        <figure class="item_picture">
-                                            <img src="img/picture/product3.jpg" alt="">
-                                        </figure>
-                                        <div class="item_body">
-                                            <h3 class="item_title">Вкусные гранаты</h3>
-                                            <p class="item_content">
-                                                С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <div class="item_order">
-                                        <div class="price-num">
-                                            <div class="number">
-                                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
-                                                <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
-                                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
-                                            </div>
-                                            <span class="item_total">3кг</span>
-                                            <span class="item_price">352 P</span>
-                                        </div>
-                                        <a href="" class="item_link">заказать</a>
-                                    </div>
-                                </div>
-                                <div class="carousel_item item">
-                                    <a href="" class="carousel_link">
-                                        <div class="item_label label label-2"></div>
-                                        <figure class="item_picture">
-                                            <img src="img/picture/product1.jpg" alt="">
-                                        </figure>
-                                        <div class="item_body">
-                                            <h3 class="item_title">Сочные апельсины</h3>
-                                            <p class="item_content">
-                                                С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <div class="item_order">
-                                        <div class="price-num">
-                                            <div class="number">
-                                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
-                                                <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
-                                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
-                                            </div>
-                                            <span class="item_total">3кг</span>
-                                            <span class="item_price">352 P</span>
-                                        </div>
-                                        <a href="" class="item_link">заказать</a>
-                                    </div>
-                                </div>
-                                <div class="carousel_item item">
-                                    <a href="" class="carousel_link">
-                                        <div class="item_label label label-2"></div>
-                                        <figure class="item_picture">
-                                            <img src="img/picture/product2.jpg" alt="">
-                                        </figure>
-                                        <div class="item_body">
-                                            <h3 class="item_title">Виноград «Изабелла»</h3>
-                                            <p class="item_content">
-                                                С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <div class="item_order">
-                                        <div class="price-num">
-                                            <div class="number">
-                                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
-                                                <span>
-                                                    <span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
-                                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
-                                            </div>
-                                            <span class="item_total">3кг</span>
-                                            <span class="item_price">352 P</span>
-                                        </div>
-                                        <a href="" class="item_link">заказать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel_button-prev"></div>
-                        <div class="carousel_button-next"></div>
-                    </div>
-                </div>
-                <div class="taste_comments comments">
-                    <h2 class="section-title section-title--big">Отзывы покупателей о позиции  «Сочный апельсин»</h2>
-                    <div class="comments_list">
-                        <div class="comments_brick">
-                            <div class="comments_heading">
-                                <h4 class="comments_name">Петр Петипак</h4>
-                                <ul class="comments_social social">
-                                    <li class="social_item"><a href="" class="social_link social_link--fb"></a></li>
-                                    <li class="social_item"><a href="" class="social_link social_link--ins"></a></li>
-                                    <li class="social_item"><a href="" class="social_link social_link--vk"></a></li>
-                                </ul>
-                            </div>
-                            <div class="comments_content">
-                                <p>
-                                    Эта груша просто божественна. Причем именно в октябре! В августе она не была еще такой сочной. Рекомендую заказывать её именно в октябре! А летом можно брать «Конференц».
                                 </p>
                             </div>
-                            <div class="comments_info">
-                                <span class="comments_date">18.11.2016</span>
-                                <div class="comments_rate rate">
-                                    <div class="star star--full"></div>
-                                    <div class="star star--full"></div>
-                                    <div class="star star--full"></div>
-                                    <div class="star star--full"></div>
-                                    <div class="star star--full"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comments_brick">
-                            <div class="comments_heading">
-                                <h4 class="comments_name">Гоша Куценко</h4>
-                                <ul class="comments_social social">
-                                    <li class="social_item"><a href="" class="social_link social_link--ins"></a></li>
-                                </ul>
-                            </div>
-                            <div class="comments_content">
+                            <div data-text="wm" class="fruit_text-wrap fruit_text-wrap--addishional">
+                                <h3 class="fruit_title">Упаковка</h3>
                                 <p>
-                                    Ну я как бы вообще отзыв пишу потому что мне за это щедро заплатили, так то я мясо люблю.
+                                   Иногда мы тратим на упаковку до 3% стоимости заказа. Это значит, что мы используем только самые качественные упаковочные материалы, заворачиваем в салфетки каждый помидор и каждый персик, тщательно контролируем сборку заказа.
                                 </p>
-                                <p>
-                                    Вот только никак не пойму, почему отзывы про груши? Страница ведь про сочные апельсины!
-                                </p>
-                            </div>
-                            <div class="comments_info">
-                                <span class="comments_date">21.10.2016</span>
-                                <div class="comments_rate rate">
-                                    <div class="star star--full"></div>
-                                    <div class="star star--full"></div>
-                                    <div class="star star--full"></div>
-                                    <div class="star star--full"></div>
-                                    <div class="star"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comments_brick">
-                            <div class="comments_heading">
-                                <h4 class="comments_name">Жора Летний</h4>
-                                <ul class="comments_social social">
-                                    <li class="social_item"><a href="" class="social_link social_link--fb"></a></li>
-                                    <li class="social_item"><a href="" class="social_link social_link--vk"></a></li>
-                                </ul>
-                            </div>
-                            <div class="comments_content">
-                                <p>
-                                    Это определенно очень вкусная груша, но по факту груши это так себе фрукты, попробуйте лучше яблоки!
-                                </p>
-                            </div>
-                            <div class="comments_info">
-                                <span class="comments_date">21.10.2016</span>
-                                <div class="comments_rate rate">
-                                    <div class="star star--full"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="taste_rule rule">
+                        <h2 class="section-title">Гарантия вкуса</h2>
+                        <p class="rule_text text-page">
+                            Если вы считаете, что мы привезли плохой товар, позвоните нам по телефону 8 (495) 540-51-86 и назовите номер заказа. Мы сделаем замену на эту сумму в следующем заказе или вернем вам деньги.
+                        </p>
+                        <div class="rule_list">
+                            <div class="rule_brick">
+                                <figure class="rule_picture shake-slow">
+                                    <img src="img/icons/taste_01.svg" alt="">
+                                </figure>
+                                <span class="rule_title">Плохой товар</span>
+                                <span class="rule_content">
+                                    Расскажите, если вам достался испорченный или недозрелый товар.
+                                </span>
+                            </div>
+                            <div class="rule_brick rule_brick--separator">
+                                <figure class="rule_picture">
+                                    <img src="img/icons/arrow.svg" alt="">
+                                </figure>
+                            </div>
+                            <div class="rule_brick">
+                                <figure class="rule_picture shake-slow">
+                                    <img src="img/icons/taste_02.svg" alt="">
+                                </figure>
+                                <span class="rule_title rule_title--yellow">Звонок оператору</span>
+                                <span class="rule_content">
+                                    Оставьте заявку на замену товара или возврат денег по телефону.
+                                </span>
+                            </div>
+                            <div class="rule_brick rule_brick--separator">
+                                <figure class="rule_picture">
+                                    <img src="img/icons/arrow.svg" alt="">
+                                </figure>
+                            </div>
+                            <div class="rule_brick">
+                                <figure class="rule_picture shake-slow">
+                                    <img src="img/icons/taste_03.svg" alt="">
+                                </figure>
+                                <span class="rule_title rule_title--green-light">Новый товар</span>
+                                <span class="rule_content">
+                                    Получите новый товар или компенсацию в деньгах.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taste_additional additional">
+                        <h2 class="section-title">Дополните заказ фруктами на пике сезона</h2>
+                        <p class="rule_text text-page">
+                            Если вам требуются продукты, полностью готовые к употреблению, то мы их помоем и привезем в специальной упаковке. Дописываем текст про упаковку и взвешивание. И еще пара строк про доставку и всё такое. А далее чуть подробней.
+                        </p>
+                        <div class="taste_carousel carousel">
+                            <div class="carousel_container">
+                                <div class="carousel_wrapper">
+                                    <div class="carousel_item item">
+                                        <a href="" class="carousel_link">
+                                            <div class="item_label label label-2"></div>
+                                            <figure class="item_picture">
+                                                <img src="img/picture/product1.jpg" alt="">
+                                            </figure>
+                                            <div class="item_body">
+                                                <h3 class="item_title">Сочные апельсины</h3>
+                                                <p class="item_content">
+                                                    С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="item_order">
+                                            <div class="price-num">
+                                                <div class="number">
+                                                    <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                                    <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                                    <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                                </div>
+                                                <span class="item_total">3кг</span>
+                                                <span class="item_price">352 P</span>
+                                            </div>
+                                            <a href="" class="item_link">заказать</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel_item item">
+                                        <a href="" class="carousel_link">
+                                            <div class="item_label label label-2"></div>
+                                            <figure class="item_picture">
+                                                <img src="img/picture/product2.jpg" alt="">
+                                            </figure>
+                                            <div class="item_body">
+                                                <h3 class="item_title">Виноград «Изабелла»</h3>
+                                                <p class="item_content">
+                                                    С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="item_order">
+                                            <div class="price-num">
+                                                <div class="number">
+                                                    <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                                    <span>
+                                                        <span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                                    <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                                </div>
+                                                <span class="item_total">3кг</span>
+                                                <span class="item_price">352 P</span>
+                                            </div>
+                                            <a href="" class="item_link">заказать</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel_item item">
+                                        <a href="" class="carousel_link">
+                                            <div class="item_label label label-2"></div>
+                                            <figure class="item_picture">
+                                                <img src="img/picture/product3.jpg" alt="">
+                                            </figure>
+                                            <div class="item_body">
+                                                <h3 class="item_title">Вкусные гранаты</h3>
+                                                <p class="item_content">
+                                                    С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="item_order">
+                                            <div class="price-num">
+                                                <div class="number">
+                                                    <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                                    <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                                    <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                                </div>
+                                                <span class="item_total">3кг</span>
+                                                <span class="item_price">352 P</span>
+                                            </div>
+                                            <a href="" class="item_link">заказать</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel_item item">
+                                        <a href="" class="carousel_link">
+                                            <div class="item_label label label-2"></div>
+                                            <figure class="item_picture">
+                                                <img src="img/picture/product1.jpg" alt="">
+                                            </figure>
+                                            <div class="item_body">
+                                                <h3 class="item_title">Сочные апельсины</h3>
+                                                <p class="item_content">
+                                                    С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="item_order">
+                                            <div class="price-num">
+                                                <div class="number">
+                                                    <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                                    <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                                    <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                                </div>
+                                                <span class="item_total">3кг</span>
+                                                <span class="item_price">352 P</span>
+                                            </div>
+                                            <a href="" class="item_link">заказать</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel_item item">
+                                        <a href="" class="carousel_link">
+                                            <div class="item_label label label-2"></div>
+                                            <figure class="item_picture">
+                                                <img src="img/picture/product2.jpg" alt="">
+                                            </figure>
+                                            <div class="item_body">
+                                                <h3 class="item_title">Виноград «Изабелла»</h3>
+                                                <p class="item_content">
+                                                    С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="item_order">
+                                            <div class="price-num">
+                                                <div class="number">
+                                                    <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                                    <span>
+                                                        <span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                                    <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                                </div>
+                                                <span class="item_total">3кг</span>
+                                                <span class="item_price">352 P</span>
+                                            </div>
+                                            <a href="" class="item_link">заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel_button-prev"></div>
+                            <div class="carousel_button-next"></div>
+                        </div>
+                    </div>
+                    <div class="taste_comments comments">
+                        <h2 class="section-title section-title--big">Отзывы покупателей о позиции  «Сочный апельсин»</h2>
+                        <div class="comments_list">
+                            <div class="comments_brick">
+                                <div class="comments_heading">
+                                    <h4 class="comments_name">Петр Петипак</h4>
+                                    <ul class="comments_social social">
+                                        <li class="social_item"><a href="" class="social_link social_link--fb"></a></li>
+                                        <li class="social_item"><a href="" class="social_link social_link--ins"></a></li>
+                                        <li class="social_item"><a href="" class="social_link social_link--vk"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="comments_content">
+                                    <p>
+                                        Эта груша просто божественна. Причем именно в октябре! В августе она не была еще такой сочной. Рекомендую заказывать её именно в октябре! А летом можно брать «Конференц».
+                                    </p>
+                                </div>
+                                <div class="comments_info">
+                                    <span class="comments_date">18.11.2016</span>
+                                    <div class="comments_rate rate">
+                                        <div class="star star--full"></div>
+                                        <div class="star star--full"></div>
+                                        <div class="star star--full"></div>
+                                        <div class="star star--full"></div>
+                                        <div class="star star--full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments_brick">
+                                <div class="comments_heading">
+                                    <h4 class="comments_name">Гоша Куценко</h4>
+                                    <ul class="comments_social social">
+                                        <li class="social_item"><a href="" class="social_link social_link--ins"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="comments_content">
+                                    <p>
+                                        Ну я как бы вообще отзыв пишу потому что мне за это щедро заплатили, так то я мясо люблю.
+                                    </p>
+                                    <p>
+                                        Вот только никак не пойму, почему отзывы про груши? Страница ведь про сочные апельсины!
+                                    </p>
+                                </div>
+                                <div class="comments_info">
+                                    <span class="comments_date">21.10.2016</span>
+                                    <div class="comments_rate rate">
+                                        <div class="star star--full"></div>
+                                        <div class="star star--full"></div>
+                                        <div class="star star--full"></div>
+                                        <div class="star star--full"></div>
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments_brick">
+                                <div class="comments_heading">
+                                    <h4 class="comments_name">Жора Летний</h4>
+                                    <ul class="comments_social social">
+                                        <li class="social_item"><a href="" class="social_link social_link--fb"></a></li>
+                                        <li class="social_item"><a href="" class="social_link social_link--vk"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="comments_content">
+                                    <p>
+                                        Это определенно очень вкусная груша, но по факту груши это так себе фрукты, попробуйте лучше яблоки!
+                                    </p>
+                                </div>
+                                <div class="comments_info">
+                                    <span class="comments_date">21.10.2016</span>
+                                    <div class="comments_rate rate">
+                                        <div class="star star--full"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 
     <footer class="footer">
       <div class="wrap_inner">
