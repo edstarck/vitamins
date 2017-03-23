@@ -420,19 +420,19 @@ fieldset {
   -webkit-backdrop-filter: saturate(200%) blur(15px);
   box-sizing: border-box;
   &--fixed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: transparent;
-      .header_wrap {
-          align-items: center;
-      }
-      .enter {
-          background-color: rgba(255,123,0,.8);
-      }
-      .menu {
-          opacity: 0;
-      }
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    .header_wrap {
+      align-items: center;
+    }
+    .enter {
+      background-color: rgba(255,123,0,.8);
+    }
+    .menu {
+      opacity: 0;
+    }
   }
   &_wrap {
     display: flex;
@@ -440,17 +440,17 @@ fieldset {
     align-items: center;
   }
   &_enter {
-      display: none;
-      text-align: center;
-      @media (min-width: 670px) {
-         display: block;
-      }
-      &--mobile {
-          display: block;
-          font-size: 16px !important;
-          margin: 0 auto;
-          line-height: 2.3 !important;
-      }
+    display: none;
+    text-align: center;
+    @media (min-width: 670px) {
+      display: block;
+    }
+    &--mobile {
+      display: block;
+      font-size: 16px !important;
+      margin: 0 auto;
+      line-height: 2.3 !important;
+    }
   }
   &_phone {
     color: #fff;
@@ -462,12 +462,10 @@ fieldset {
     word-spacing: -0.15em;
     line-height: 1;
     text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+    text-align: center;
     @media (min-width: 980px) {
       display: block;
     }
-  }
-  &_logo {
-      flex: 1;
   }
 }
 
@@ -599,11 +597,11 @@ fieldset {
 }
 
 .slogan {
-  flex: 1;
-  width: 231px;
+  width: 250px;
   color: #fff;
   font-family: "SFUIDisplay-Light", sans-serif;
   display: none;
+  text-align: center;
   @media (min-width: 980px) {
     display: block;
   }
@@ -614,7 +612,7 @@ fieldset {
     font-size: 11px;
     line-height: 1.2;
     text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
-    text-align: right;
+    text-align: center;
     @media (min-width: 1290px) {
       font-size: 12px;
       margin-right: 0;
@@ -698,7 +696,7 @@ fieldset {
       margin: -50px auto 0 auto;
     }
     .slogan--mobile {
-      max-width: 183px;
+      max-width: 200px;
       display: block;
       margin-left: auto;
       margin-top: -47px;
@@ -707,6 +705,7 @@ fieldset {
       .header_phone {
         font-size: 27px;
         text-shadow: 2px 1px 2px transparent;
+        text-align: center;
       }
       .slogan_text {
         width: auto;
