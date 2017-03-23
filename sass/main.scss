@@ -283,7 +283,7 @@ fieldset {
   background-color: #fff;
   border-radius: 4px;
   vertical-align: middle;
-  margin-top: -5px;
+  margin: -5px 2px 0 2px;
 }
 .callback-link {
   display: block;
@@ -572,6 +572,7 @@ fieldset {
       transform: scaleX(0);
       transition: all .3s;
       will-change: transform;
+      border-radius: 8px;
     }
     &--active {
       &:after {
@@ -608,7 +609,7 @@ fieldset {
 }
 
 .slogan {
-  width: 250px;
+  width: 280px;
   color: #fff;
   font-family: "SFUIDisplay-Light", sans-serif;
   display: none;
@@ -1952,6 +1953,7 @@ a.header_enter--mobile.enter.enter_toggle {
 .slider {
   position: relative;
   width: 100%;
+  min-height: 550px;
   height: 100vh;
   overflow: hidden;
   &--inner {
@@ -1966,7 +1968,7 @@ a.header_enter--mobile.enter.enter_toggle {
     margin: 0;
     padding: 1px 0 0 0;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: left top;
     background-size: cover;
   }
   span {
@@ -2119,20 +2121,20 @@ a.header_enter--mobile.enter.enter_toggle {
     }
   }
   &__grid {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100%;
     height: 100%;
-    margin-top: -24%;
-    @media(min-width: 1030px) {
-      margin-top: -17%;
-    }
+    top: 0;
+    left: 0;
   }
   &__item {
+    min-width: 190px;
     width: 190px;
     height: 190px;
-    margin: 0 45px;
+    margin: 0 45px 100px 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
