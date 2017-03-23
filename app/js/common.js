@@ -113,7 +113,7 @@ $(function() {
   var offsetTopPanel = 140;
 
   function fixedNav() {
-    if (window.scrollY >= offsetTopPanel) {
+    if (window.pageYOffset >= offsetTopPanel) {
       document.body.classList.add('fixed-nav');
     } else {
       document.body.classList.remove('fixed-nav');

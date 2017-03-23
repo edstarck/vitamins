@@ -8,6 +8,9 @@
 
 html {
   height: 100%;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   height: auto;
+  }
 }
 
 body {
@@ -1391,6 +1394,9 @@ a.header_enter--mobile.enter.enter_toggle {
       position: relative;
       transform: translate3d(0,0,0);
       box-sizing: border-box;
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+       flex-basis: 350px;
+      }
   }
   &_link {
       width: 100%;
@@ -2130,10 +2136,18 @@ a.header_enter--mobile.enter.enter_toggle {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 100%;
+    border-radius: 190px;
     text-align: center;
     box-sizing: border-box;
     mask-image: -webkit-radial-gradient(white, black);
+    @-moz-document url-prefix() {
+      position: relative;
+      overflow: hidden;
+    }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      position: relative;
+      overflow: hidden;
+    }
     &:after {
       position: absolute;
       content: '';
@@ -2147,6 +2161,16 @@ a.header_enter--mobile.enter.enter_toggle {
       background-size: cover;
       z-index: 0;
       filter: blur(10px);
+      @-moz-document url-prefix() {
+       filter: none;
+       background-image: none;
+       background-color: rgba(#3f3f3f, .5);
+      }
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        filter: none;
+        background-image: none;
+        background-color: rgba(#3f3f3f, .5);
+      }
     }
   }
   &__icon {
