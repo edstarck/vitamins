@@ -646,21 +646,23 @@ fieldset {
   padding: 0;
   transform: translateZ(0);
   .logo--mobile {
-    display: block;
-    margin-top: 4px;
+    display: inline-block;
+    vertical-align: middle;
   }
   .enter--mobile {
-    display: flex;
-    max-width: 210px;
-    margin: -50px auto 0 auto;
+    display: inline-flex;
+    width: 210px;
+    position: absolute;
+    left: 50%;
+    margin: 19px auto 0 -105px;
   }
   .slogan--mobile {
-    max-width: 183px;
-    display: block;
-    margin-left: auto;
-    margin-top: -47px;
+    max-width: 210px;
+    display: inline-block;
+    float: right;
     padding-top: 2px;
-    text-align: right;
+    text-align: center;
+    vertical-align: middle;
     .header_phone {
       font-size: 27px;
       text-shadow: 2px 1px 2px transparent;
@@ -673,7 +675,9 @@ fieldset {
     }
   }
   .gumburger {
-    display: block;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
   }
 }
 
@@ -2241,6 +2245,7 @@ a.header_enter--mobile.enter.enter_toggle {
 
 .registration-success {
   margin: 0 0 100px 0;
+  padding-top: 100px;
 }
 
 .registration_button {
