@@ -192,162 +192,6 @@
       </div>
     </footer>
 
-    <div class="hidden">
-      <div id="modal-adress" class="modal mfp-hide mfp-fade">
-          <button class="modal_close"></button>
-          <h3 class="modal_title section-title">Адрес доставки</h3>
-          <div class="modal_content">
-              <div class="modal_content">
-                  <form class="form form_adress" action="" method="post">
-                      <div class="form_adress-row">
-                          <div class="form_group">
-                              <label for="street">Улица</label>
-                              <input id="street" class="field field_street" name="street" type="text" placeholder="Новослободская-Ямская">
-                          </div>
-                          <div class="form_home-row">
-                              <div class="form_group">
-                                  <label for="house">Дом</label>
-                                  <input id="house" class="field field_house" name="house" type="text" >
-                              </div>
-                              <div class="form_group">
-                                  <label for="corpuse">Корпус</label>
-                                  <input id="corpuse" class="field field_corpuse" name="corpuse" type="text" >
-                              </div>
-                              <div class="form_group">
-                                  <label for="flat">Кв/Офис</label>
-                                  <input id="flat" class="field field_flat" name="flat" type="text" >
-                              </div>
-                          </div>
-                      </div>
-                      <div class="form_button-group">
-                          <button type="submit" class="registration_button btn">сохранить</button>
-                          <button type="submit" class="registration_button btn btn--red">удалить</button>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-      <div id="modal-adress--add" class="modal mfp-hide mfp-fade">
-          <button class="modal_close"></button>
-          <h3 class="modal_title section-title">Адрес доставки</h3>
-          <div class="modal_content">
-              <div class="modal_content">
-                  <form class="form form_adress" action="" method="post">
-                      <div class="form_adress-row">
-                          <div class="form_group">
-                              <label for="street">Улица</label>
-                              <input id="street" class="field field_street" name="street" type="text" placeholder="Новослободская-Ямская">
-                          </div>
-                          <div class="form_home-row">
-                              <div class="form_group">
-                                  <label for="house">Дом</label>
-                                  <input id="house" class="field field_house" name="house" type="text" >
-                              </div>
-                              <div class="form_group">
-                                  <label for="corpuse">Корпус</label>
-                                  <input id="corpuse" class="field field_corpuse" name="corpuse" type="text" >
-                              </div>
-                              <div class="form_group">
-                                  <label for="flat">Кв/Офис</label>
-                                  <input id="flat" class="field field_flat" name="flat" type="text" >
-                              </div>
-                          </div>
-                      </div>
-                      <div class="form_button-group">
-                          <button type="submit" class="registration_button btn">добавить</button>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-      <div id="modal-reg--order" class="modal mfp-hide mfp-fade">
-          <button class="modal_close"></button>
-          <h3 class="modal_title section-title">Ваш заказ оформлен!</h3>
-          <div class="modal_content">
-              <div class="rule_text text-page">
-                  Ваш заказ оформлен и за него вам начислено <strong>50 баллов</strong>.Кажется, вы забыли авторизоваться, и чтобы не потерять баллы введите ваш e-mail и пароль.
-              </div>
-              <form class="form" action="" method="post">
-                  <div class="form_group">
-                      <label for="email">Ваш E-mail</label>
-                      <input id="email" class="field" name="email" type="text" placeholder="jora@leto.ru">
-                  </div>
-                  <div class="form_group">
-                      <label for="password">Пароль</label>
-                      <input id="password" class="field" name="password" type="password">
-                  </div>
-                  <div class="form_button-group">
-                      <button type="submit" class="registration_button btn">авторизация</button>
-                      <a href="#modal-reg" class="form_link link-popup">Зарегистрироваться</a>
-                  </div>
-              </form>
-          </div>
-      </div>
-      <div id="modal-login" class="modal mfp-hide mfp-fade">
-          <button class="modal_close"></button>
-          <h3 class="modal_title section-title">Авторизация</h3>
-          <div class="modal_content">
-              <form class="form" action="" method="post">
-                  <div class="form_group">
-                      <label for="email">Ваш E-mail</label>
-                      <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru">
-                      <span class="error_message">*Сообщение об ошибке</span>
-                  </div>
-                  <div class="form_group">
-                      <label for="password">Пароль</label>
-                      <input id="password" class="field field_invalid" name="password" type="password" required>
-                      <span class="error_message">*Сообщение об ошибке</span>
-                  </div>
-                  <div class="form_group">
-                      <a href="recovery-pass.html" class="foget_link">Забыли пароль?</a>
-                  </div>
-                  <div class="form_button-group">
-                      <button type="submit" class="registration_button btn btn--lg">авторизация</button>
-                      <a href="#modal-reg" class="form_link link-popup">Зарегистрироваться</a>
-                  </div>
-              </form>
-          </div>
-      </div>
-      <div id="modal-reg" class="modal mfp-hide mfp-fade">
-          <button class="modal_close"></button>
-          <h3 class="modal_title section-title">Регистрация</h3>
-          <div class="modal_content">
-              <form class="form form_reg" action="" method="post">
-                  <div class="form_group">
-                      <div class="field_label">
-                          <label for="name">Имя</label>
-                      </div>
-                      <div class="field_input">
-                          <input id="name" class="field field_invalid" name="name" type="text" placeholder="Квентин Тарантино">
-                      </div>
-                      <span class="error_message">*Сообщение об ошибке</span>
-                  </div>
-                  <div class="form_group">
-                      <label for="phone">Телефон</label>
-                      <input id="phone" class="field" name="phone" type="text" placeholder="+7 (495) 666-77-22">
-                  </div>
-                  <div class="form_group">
-                      <label for="email">E-mail</label>
-                      <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru">
-                      <span class="error_message">*Сообщение об ошибке</span>
-                  </div>
-                  <div class="form_group">
-                      <label for="password">Пароль</label>
-                      <input id="password" class="field" name="password" type="password">
-                  </div>
-                  <div class="form_group">
-                      <label for="password">Подтверждение</label>
-                      <input id="password" class="field" name="password" type="password">
-                  </div>
-                  <div class="form_button-group">
-                      <button type="submit" class="registration_button btn btn--facebook">Войти через Facebook</button>
-                      <button type="submit" class="registration_button btn btn--reg">регистрация</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-    </div>
-
     <div class="overlay overlay-slidedown">
       <nav class="mobile-navigation">
         <ul class="mobile-navigation__list">
@@ -423,6 +267,162 @@
           </li>
         </ul>
       </nav>
+    </div>
+  </div>
+
+  <div class="hidden">
+    <div id="modal-adress" class="modal mfp-hide mfp-fade">
+        <button class="modal_close"></button>
+        <h3 class="modal_title section-title">Адрес доставки</h3>
+        <div class="modal_content">
+            <div class="modal_content">
+                <form class="form form_adress" action="" method="post">
+                    <div class="form_adress-row">
+                        <div class="form_group">
+                            <label for="street">Улица</label>
+                            <input id="street" class="field field_street" name="street" type="text" placeholder="Новослободская-Ямская">
+                        </div>
+                        <div class="form_home-row">
+                            <div class="form_group">
+                                <label for="house">Дом</label>
+                                <input id="house" class="field field_house" name="house" type="text" >
+                            </div>
+                            <div class="form_group">
+                                <label for="corpuse">Корпус</label>
+                                <input id="corpuse" class="field field_corpuse" name="corpuse" type="text" >
+                            </div>
+                            <div class="form_group">
+                                <label for="flat">Кв/Офис</label>
+                                <input id="flat" class="field field_flat" name="flat" type="text" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_button-group">
+                        <button type="submit" class="registration_button btn">сохранить</button>
+                        <button type="submit" class="registration_button btn btn--red">удалить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="modal-adress--add" class="modal mfp-hide mfp-fade">
+        <button class="modal_close"></button>
+        <h3 class="modal_title section-title">Адрес доставки</h3>
+        <div class="modal_content">
+            <div class="modal_content">
+                <form class="form form_adress" action="" method="post">
+                    <div class="form_adress-row">
+                        <div class="form_group">
+                            <label for="street">Улица</label>
+                            <input id="street" class="field field_street" name="street" type="text" placeholder="Новослободская-Ямская">
+                        </div>
+                        <div class="form_home-row">
+                            <div class="form_group">
+                                <label for="house">Дом</label>
+                                <input id="house" class="field field_house" name="house" type="text" >
+                            </div>
+                            <div class="form_group">
+                                <label for="corpuse">Корпус</label>
+                                <input id="corpuse" class="field field_corpuse" name="corpuse" type="text" >
+                            </div>
+                            <div class="form_group">
+                                <label for="flat">Кв/Офис</label>
+                                <input id="flat" class="field field_flat" name="flat" type="text" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_button-group">
+                        <button type="submit" class="registration_button btn">добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="modal-reg--order" class="modal mfp-hide mfp-fade">
+        <button class="modal_close"></button>
+        <h3 class="modal_title section-title">Ваш заказ оформлен!</h3>
+        <div class="modal_content">
+            <div class="rule_text text-page">
+                Ваш заказ оформлен и за него вам начислено <strong>50 баллов</strong>.Кажется, вы забыли авторизоваться, и чтобы не потерять баллы введите ваш e-mail и пароль.
+            </div>
+            <form class="form" action="" method="post">
+                <div class="form_group">
+                    <label for="email">Ваш E-mail</label>
+                    <input id="email" class="field" name="email" type="text" placeholder="jora@leto.ru">
+                </div>
+                <div class="form_group">
+                    <label for="password">Пароль</label>
+                    <input id="password" class="field" name="password" type="password">
+                </div>
+                <div class="form_button-group">
+                    <button type="submit" class="registration_button btn">авторизация</button>
+                    <a href="#modal-reg" class="form_link link-popup">Зарегистрироваться</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="modal-login" class="modal mfp-hide mfp-fade">
+        <button class="modal_close"></button>
+        <h3 class="modal_title section-title">Авторизация</h3>
+        <div class="modal_content">
+            <form class="form" action="" method="post">
+                <div class="form_group">
+                    <label for="email">Ваш E-mail</label>
+                    <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru">
+                    <span class="error_message">*Сообщение об ошибке</span>
+                </div>
+                <div class="form_group">
+                    <label for="password">Пароль</label>
+                    <input id="password" class="field field_invalid" name="password" type="password" required>
+                    <span class="error_message">*Сообщение об ошибке</span>
+                </div>
+                <div class="form_group">
+                    <a href="recovery-pass.html" class="foget_link">Забыли пароль?</a>
+                </div>
+                <div class="form_button-group">
+                    <button type="submit" class="registration_button btn btn--lg">авторизация</button>
+                    <a href="#modal-reg" class="form_link link-popup">Зарегистрироваться</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="modal-reg" class="modal mfp-hide mfp-fade">
+        <button class="modal_close"></button>
+        <h3 class="modal_title section-title">Регистрация</h3>
+        <div class="modal_content">
+            <form class="form form_reg" action="" method="post">
+                <div class="form_group">
+                    <div class="field_label">
+                        <label for="name">Имя</label>
+                    </div>
+                    <div class="field_input">
+                        <input id="name" class="field field_invalid" name="name" type="text" placeholder="Квентин Тарантино">
+                    </div>
+                    <span class="error_message">*Сообщение об ошибке</span>
+                </div>
+                <div class="form_group">
+                    <label for="phone">Телефон</label>
+                    <input id="phone" class="field" name="phone" type="text" placeholder="+7 (495) 666-77-22">
+                </div>
+                <div class="form_group">
+                    <label for="email">E-mail</label>
+                    <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru">
+                    <span class="error_message">*Сообщение об ошибке</span>
+                </div>
+                <div class="form_group">
+                    <label for="password">Пароль</label>
+                    <input id="password" class="field" name="password" type="password">
+                </div>
+                <div class="form_group">
+                    <label for="password">Подтверждение</label>
+                    <input id="password" class="field" name="password" type="password">
+                </div>
+                <div class="form_button-group">
+                    <button type="submit" class="registration_button btn btn--facebook">Войти через Facebook</button>
+                    <button type="submit" class="registration_button btn btn--reg">регистрация</button>
+                </div>
+            </form>
+        </div>
     </div>
   </div>
 
