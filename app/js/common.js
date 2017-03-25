@@ -24,21 +24,6 @@ $(function() {
 
   //Popup
   $(function(){
-      var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-      function preventDefault(e) {
-        e = e || window.event;
-        if (e.preventDefault)
-            e.preventDefault();
-        e.returnValue = false;
-      }
-
-      function preventDefaultForScrollKeys(e) {
-          if (keys[e.keyCode]) {
-              preventDefault(e);
-              return false;
-          }
-      }
       var magnificPopup = $.magnificPopup.instance;
       $('.link-popup').magnificPopup({
           type: 'inline',
@@ -55,9 +40,11 @@ $(function() {
             },
             close: function() {
               $('.wrap').removeClass('wrap--blur');
-              $('body').css({
-                'overflow': 'auto'
-              });
+              if($('.overlay').hasClass('open')) {
+                $('body').css({'overflow': 'hidden'});
+              } else {
+                $('body').css({'overflow': 'auto'});
+              }
             }
           }
       });
@@ -249,6 +236,10 @@ $(function() {
 // Advantages mobile
 $(document).ready(function(){
   $('.slider__grid').clone().appendTo('.advantages .wrap_inner');
+});
+
+$(document).ready(function(){
+  $('.header_enter').clone().appendTo('.overlay__enter');
 });
 
 // Mobile menu
