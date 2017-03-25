@@ -2001,6 +2001,9 @@ a.header_enter--mobile.enter.enter_toggle {
   overflow: hidden;
   &--inner {
     height: 505px;
+    .slider_picture {
+      background-position: center;
+    }
   }
   &_picture {
     position: absolute;
@@ -2330,6 +2333,9 @@ a.header_enter--mobile.enter.enter_toggle {
   max-width: 362px;
   position: relative;
   margin: 0 auto;
+  &_help {
+    margin-top: 20px;
+  }
   .field {
     width: 100%;
     height: 40px;
@@ -2868,6 +2874,9 @@ transition: opacity 0.35s ease-in-out;
           left: 0;
       }
   }
+  &_history {
+    max-width: 1080px;
+  }
   &_anymore {
       margin-top: 30px;
       text-align: center;
@@ -2988,6 +2997,7 @@ transition: opacity 0.35s ease-in-out;
   padding: 0;
   box-sizing: border-box;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mfp-fade.mfp-bg {
 opacity: 0;
@@ -3333,5 +3343,8 @@ opacity: 0;
   }
   @media(min-width: 1000px) {
     display: none;
+  }
+  .enter--mobile {
+    display: block;
   }
 }

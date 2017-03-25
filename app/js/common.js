@@ -239,7 +239,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.header_enter').clone().appendTo('.overlay__enter');
+  $('.enter--mobile').clone().appendTo('.overlay__enter');
 });
 
 // Mobile menu
