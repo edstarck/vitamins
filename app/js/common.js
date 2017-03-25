@@ -24,20 +24,41 @@ $(function() {
 
   //Popup
   $(function(){
+      var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+      function preventDefault(e) {
+        e = e || window.event;
+        if (e.preventDefault)
+            e.preventDefault();
+        e.returnValue = false;
+      }
+
+      function preventDefaultForScrollKeys(e) {
+          if (keys[e.keyCode]) {
+              preventDefault(e);
+              return false;
+          }
+      }
       var magnificPopup = $.magnificPopup.instance;
       $('.link-popup').magnificPopup({
           type: 'inline',
           preloader: false,
           removalDelay: 300,
-          // fixedContentPos: false,
+          fixedContentPos: false,
           mainClass: 'mfp-fade',
           callbacks: {
-              beforeOpen: function() {
-                  $('.wrap').addClass('wrap--blur');
-              },
-              close: function() {
-                  $('.wrap').removeClass('wrap--blur');
-              }
+            beforeOpen: function() {
+              $('.wrap').addClass('wrap--blur');
+              $('body').css({
+                'overflow': 'hidden'
+              });
+            },
+            close: function() {
+              $('.wrap').removeClass('wrap--blur');
+              $('body').css({
+                'overflow': 'auto'
+              });
+            }
           }
       });
       $('.modal_close').each(function(){

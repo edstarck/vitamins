@@ -815,7 +815,7 @@ a.header_enter--mobile.enter.enter_toggle {
       width: 100%;
       width: 100%;
       border: 1px solid #e5cfb1;
-      border-radius: 5px;
+      border-radius: 8px;
       padding: 5px;
       box-sizing: border-box;
       padding: 20px;
@@ -2328,7 +2328,7 @@ a.header_enter--mobile.enter.enter_toggle {
   display: block;
   max-width: 362px;
   position: relative;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
   .field {
     width: 100%;
     height: 40px;
@@ -2673,7 +2673,8 @@ transition: opacity 0.35s ease-in-out;
 
 .modal {
   position: relative;
-  max-width: 1078px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 50px 15px;
   background-color: white;
@@ -2876,6 +2877,10 @@ transition: opacity 0.35s ease-in-out;
   }
   .section-title {
     padding-top: 0;
+    padding-bottom: 10px;
+    @media(min-width: 670px) {
+      padding-bottom: 50px;
+    }
   }
 }
 .modal_title-price {
@@ -2981,6 +2986,7 @@ transition: opacity 0.35s ease-in-out;
 .mfp-container {
   padding: 0;
   box-sizing: border-box;
+  overflow: auto;
 }
 .mfp-fade.mfp-bg {
 opacity: 0;
@@ -3132,15 +3138,12 @@ opacity: 0;
 .overlay .mobile-navigation__list {
   list-style: none;
   padding: 0;
-  margin: 0 40px 0 20px;
+  margin: 0 40px 0 40px;
   display: block;
   height: 100%;
   position: relative;
   text-align: left;
   vertical-align: top;
-  @media(min-width: 670px) {
-    margin: 0 40px 0 40px;
-  }
   @media(min-width: 754px) {
     display: inline-block;
   }
@@ -3280,8 +3283,8 @@ opacity: 0;
   display: block;
   margin: 0px !important;
   position: absolute;
-  right: 2px !important;
-  width: 2px !important;
+  left: 20px !important;
+  width: 3px !important;
   height: 100px;
   background-color: #fff;
   border-radius: 8px;
@@ -3299,7 +3302,7 @@ opacity: 0;
 
 .nav-box {
   position: relative;
-  width: 90%;
+  width: 105%;
   height: 260px;
   top: 100px;
   @media(min-width: 754px) {
