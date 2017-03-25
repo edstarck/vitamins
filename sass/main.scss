@@ -28,7 +28,8 @@ body {
      -moz-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased !important;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 h1,h2,h3,h4,h5,p {
   margin: 0;
@@ -475,6 +476,7 @@ fieldset {
     line-height: 1;
     text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
     text-align: center;
+    white-space: nowrap;
   }
   &_logo {
     display: none;
@@ -623,7 +625,6 @@ fieldset {
 }
 
 .slogan {
-  width: 280px;
   color: #fff;
   font-family: "SFUIDisplay-Light", sans-serif;
   text-align: center;
@@ -815,7 +816,7 @@ a.header_enter--mobile.enter.enter_toggle {
       width: 100%;
       width: 100%;
       border: 1px solid #e5cfb1;
-      border-radius: 5px;
+      border-radius: 8px;
       padding: 5px;
       box-sizing: border-box;
       padding: 20px;
@@ -2000,6 +2001,9 @@ a.header_enter--mobile.enter.enter_toggle {
   overflow: hidden;
   &--inner {
     height: 505px;
+    .slider_picture {
+      background-position: center;
+    }
   }
   &_picture {
     position: absolute;
@@ -2328,7 +2332,10 @@ a.header_enter--mobile.enter.enter_toggle {
   display: block;
   max-width: 362px;
   position: relative;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
+  &_help {
+    margin-top: 20px;
+  }
   .field {
     width: 100%;
     height: 40px;
@@ -2673,7 +2680,8 @@ transition: opacity 0.35s ease-in-out;
 
 .modal {
   position: relative;
-  max-width: 1078px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 50px 15px;
   background-color: white;
@@ -2866,6 +2874,9 @@ transition: opacity 0.35s ease-in-out;
           left: 0;
       }
   }
+  &_history {
+    max-width: 1080px;
+  }
   &_anymore {
       margin-top: 30px;
       text-align: center;
@@ -2876,6 +2887,10 @@ transition: opacity 0.35s ease-in-out;
   }
   .section-title {
     padding-top: 0;
+    padding-bottom: 10px;
+    @media(min-width: 670px) {
+      padding-bottom: 50px;
+    }
   }
 }
 .modal_title-price {
@@ -2981,6 +2996,8 @@ transition: opacity 0.35s ease-in-out;
 .mfp-container {
   padding: 0;
   box-sizing: border-box;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mfp-fade.mfp-bg {
 opacity: 0;
@@ -3120,26 +3137,32 @@ opacity: 0;
   position: relative;
   top: 0;
   height: auto;
+  padding-top: 0;
   transform: translateY(0);
   text-align: left;
   @media(min-width: 754px) {
     top: 50%;
     height: 60%;
     transform: translateY(-50%);
+    padding-top: 62px;
+  }
+  @media(min-width: 1000px) {
     text-align: center;
   }
 }
 .overlay .mobile-navigation__list {
   list-style: none;
   padding: 0;
-  margin: 0 40px 0 20px;
+  margin: 0 40px 0 40px;
   display: block;
-  height: 100%;
   position: relative;
   text-align: left;
   vertical-align: top;
-  @media(min-width: 670px) {
-    margin: 0 40px 0 40px;
+  &:nth-of-type(1) {
+    margin-left: 40px;
+    @media(min-width: 1000px) {
+       margin-left: 66px;
+    }
   }
   @media(min-width: 754px) {
     display: inline-block;
@@ -3280,8 +3303,8 @@ opacity: 0;
   display: block;
   margin: 0px !important;
   position: absolute;
-  right: 2px !important;
-  width: 2px !important;
+  left: 20px !important;
+  width: 3px !important;
   height: 100px;
   background-color: #fff;
   border-radius: 8px;
@@ -3299,11 +3322,29 @@ opacity: 0;
 
 .nav-box {
   position: relative;
-  width: 90%;
+  width: 105%;
   height: 260px;
-  top: 100px;
+  top: 160px;
   @media(min-width: 754px) {
     width: 100%;
     height: 100%;
+    top: 0;
+  }
+}
+
+.overlay__enter {
+  position: absolute;
+  display: block;
+  width: 220px;
+  top: 100px;
+  left: 20px;
+  @media(min-width: 670px) {
+    left: 40px;
+  }
+  @media(min-width: 1000px) {
+    display: none;
+  }
+  .enter--mobile {
+    display: block;
   }
 }

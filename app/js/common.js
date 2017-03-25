@@ -29,15 +29,23 @@ $(function() {
           type: 'inline',
           preloader: false,
           removalDelay: 300,
-          // fixedContentPos: false,
+          fixedContentPos: false,
           mainClass: 'mfp-fade',
           callbacks: {
-              beforeOpen: function() {
-                  $('.wrap').addClass('wrap--blur');
-              },
-              close: function() {
-                  $('.wrap').removeClass('wrap--blur');
+            beforeOpen: function() {
+              $('.wrap').addClass('wrap--blur');
+              $('body').css({
+                'overflow': 'hidden'
+              });
+            },
+            close: function() {
+              $('.wrap').removeClass('wrap--blur');
+              if($('.overlay').hasClass('open')) {
+                $('body').css({'overflow': 'hidden'});
+              } else {
+                $('body').css({'overflow': 'auto'});
               }
+            }
           }
       });
       $('.modal_close').each(function(){
@@ -228,6 +236,10 @@ $(function() {
 // Advantages mobile
 $(document).ready(function(){
   $('.slider__grid').clone().appendTo('.advantages .wrap_inner');
+});
+
+$(document).ready(function(){
+  $('.enter--mobile').clone().appendTo('.overlay__enter');
 });
 
 // Mobile menu
