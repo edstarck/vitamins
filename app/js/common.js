@@ -24,6 +24,9 @@ $(function() {
 
   //Popup
   $(function(){
+      var windowWidth    = document.documentElement.clientWidth,
+          windowAllWidth = window.innerWidth,
+          widthScrollBar = windowAllWidth - windowWidth;
       var magnificPopup = $.magnificPopup.instance;
       $('.link-popup').magnificPopup({
           type: 'inline',
@@ -36,10 +39,10 @@ $(function() {
               $('.wrap').addClass('wrap--blur');
               $('body').css({
                 'overflow': 'hidden',
-                'padding-right': '17px'
+                'padding-right': widthScrollBar + 'px'
               });
               $('.header').css({
-                'padding-right': '17px'
+                'padding-right': widthScrollBar + 'px'
               });
             },
             close: function() {
@@ -47,10 +50,10 @@ $(function() {
               if($('.overlay').hasClass('open')) {
                 $('body').css({
                   'overflow': 'hidden',
-                  'padding-right': '17px'
+                  'padding-right': widthScrollBar + 'px'
                 });
                 $('.header').css({
-                  'padding-right': '17px'
+                  'padding-right': widthScrollBar + 'px'
                 });
               } else {
                 $('body').css({
@@ -184,6 +187,9 @@ $(function() {
 
 // Overlay
 (function() {
+var windowWidth    = document.documentElement.clientWidth,
+          windowAllWidth = window.innerWidth,
+          widthScrollBar = windowAllWidth - windowWidth;
   var triggerBttn = $('.trigger-overlay'),
     overlay = document.querySelector( 'div.overlay' ),
     closeBttn = $('.link-scroll--inner');
@@ -224,13 +230,13 @@ $(function() {
     }
     else if( !classie.has( overlay, 'close' ) ) {
       classie.add( overlay, 'open' );
-      $('body').css({
-        'overflow': 'hidden',
-        'padding-right': '17px'
-      });
-      $('.header').css({
-        'padding-right': '17px'
-      });
+        $('body').css({
+          'overflow': 'hidden',
+          'padding-right': widthScrollBar + 'px'
+        });
+        $('.header').css({
+          'padding-right': widthScrollBar + 'px'
+        });
     }
   }
 

@@ -9,7 +9,6 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   height: 100%;
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -178,11 +177,11 @@ fieldset {
       border-radius: 2px;
       &:nth-child(1) {
           top: 0;
-          width: 20px;
+          width: 16px;
       }
       &:nth-child(2) {
           top: 42%;
-          width: 20px;
+          width: 13px;
       }
       &:nth-child(3) {
           top: 86%;
@@ -464,10 +463,9 @@ fieldset {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     @media(min-width: 1000px) {
       flex-direction: row;
-      justify-content: space-between;
     }
   }
   &_phone {
@@ -510,12 +508,16 @@ fieldset {
   max-width: 414px;
   min-width: 98px;
   height: 30px;
+  margin-bottom: 150px;
   align-items: center;
   justify-content: space-around;
   border: 2px solid white;
   border-radius: 8px;
   box-sizing: border-box;
   background-color: #fff;
+  @media(min-width: 1000px) {
+    margin-bottom: 0;
+  }
   &_toggle {
       color: $color-orange !important;
       background-color: #fff;
@@ -629,9 +631,13 @@ fieldset {
 }
 
 .slogan {
+  margin-top: 100px;
   color: #fff;
   font-family: "SFUIDisplay-Light", sans-serif;
   text-align: center;
+  @media(min-width: 1000px) {
+    margin-top: 0;
+  }
   &_text {
     display: block;
     margin-left: auto;
@@ -2993,6 +2999,9 @@ transition: opacity 0.35s ease-in-out;
 
 .mfp-bg {
   background: rgba($color-orange, .2);
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    background: rgba($color-orange, .95);
+  }
 }
 .mfp-close-btn-in .mfp-close {
   display: none;
@@ -3322,6 +3331,9 @@ opacity: 0;
   height: 100%;
   width: 100%;
   padding-right: 20px;
+  @media(min-width: 754px) {
+    overflow-y: hidden;
+  }
 }
 
 .nav-box {
