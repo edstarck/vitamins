@@ -146,6 +146,10 @@
           </div>
         </div>
       </section>
+      <section class="advantages">
+        <div class="wrap_inner">
+        </div>
+      </section>
       <main class="content">
         <section class="catalog">
           <div class="wrap_inner">
@@ -415,6 +419,32 @@
                             <span class="item_price">352 P</span>
                         </div>
                         <a href="" class="item_link">заказать</a>
+                    </div>
+                </div>
+                <div class="carousel_item item catalog__item">
+                    <a href="product.html" class="carousel_link">
+                        <figure class="item_picture">
+                            <img src="img/picture/product2.jpg" alt="">
+                        </figure>
+                        <div class="item_body">
+                            <h3 class="item_title">Виноград «Изабелла»</h3>
+                            <p class="item_content">
+                                С тонкой шкуркой, ароматные, гармония кисло-сладкого вкуса, эталон для любителей этого вида.
+                            </p>
+                        </div>
+                    </a>
+                    <div class="item_order">
+                        <div class="price-num">
+                            <div class="number">
+                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                <span>
+                                    <span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                            </div>
+                            <span class="item_total">3кг</span>
+                            <span class="item_price">352 P</span>
+                        </div>
+                        <a href="" class="item_link item_link--order">оформить</a>
                     </div>
                 </div>
                 <div class="carousel_item item catalog__item">
@@ -780,80 +810,83 @@
     </div>
 
     <div class="overlay overlay-slidedown">
-      <nav class="mobile-navigation">
-        <ul class="mobile-navigation__list">
-          <li>
-            <span class="mobile-navigation__title">
-              Прилавок
-            </span>
-          </li>
-          <li>
-            <a href="#" >Фрукты</a>
-          </li>
-          <li>
-            <a href="#" >Овощи</a>
-          </li>
-          <li>
-            <a href="#">Сухофрукты</a>
-          </li>
-          <li>
-            <a href="#">Специи</a>
-          </li>
-          <li>
-            <a href="#">Сеты</a>
-          </li>
-        </ul>
-        <ul class="mobile-navigation__list">
-          <li>
-            <span class="mobile-navigation__title">
-              О сервисе
-            </span>
-          </li>
-          <li>
-            <a href="delivery.html" >Доставка</a>
-          </li>
-          <li>
-            <a href="#" >Оплата</a>
-          </li>
-          <li>
-            <a href="order.html">Заказ</a>
-          </li>
-          <li>
-            <a href="cashback.html">Возврат</a>
-          </li>
-          <li>
-            <a href="#">Карта сезонности</a>
-          </li>
-          <li>
-            <a href="#">Магазины</a>
-          </li>
-        </ul>
-        <ul class="mobile-navigation__list">
-          <li>
-            <span class="mobile-navigation__title">
-              Кабинет
-            </span>
-          </li>
-          <li>
-            <a href="profile.html" >Профиль</a>
-          </li>
-          <li>
-            <a href="#" >Пригласить друга</a>
-          </li>
-          <li>
-            <a href="#">Ваши баллы</a>
-          </li>
-          <li>
-            <a href="#">Ваши отзывы</a>
-          </li>
-          <li>
-            <a href="history.html">История заказов</a>
-          </li>
-          <li>
-            <a href="address.html">Адреса</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="overlay__enter"></div>
+      <div class="nav-box">
+        <nav class="mobile-navigation">
+          <ul class="mobile-navigation__list">
+            <li>
+              <span class="mobile-navigation__title">
+                Прилавок
+              </span>
+            </li>
+            <li>
+              <a href="#" >Фрукты</a>
+            </li>
+            <li>
+              <a href="#" >Овощи</a>
+            </li>
+            <li>
+              <a href="#">Сухофрукты</a>
+            </li>
+            <li>
+              <a href="#">Специи</a>
+            </li>
+            <li>
+              <a href="#">Сеты</a>
+            </li>
+          </ul>
+          <ul class="mobile-navigation__list">
+            <li>
+              <span class="mobile-navigation__title">
+                О сервисе
+              </span>
+            </li>
+            <li>
+              <a href="delivery.html" >Доставка</a>
+            </li>
+            <li>
+              <a href="#" >Оплата</a>
+            </li>
+            <li>
+              <a href="order.html">Заказ</a>
+            </li>
+            <li>
+              <a href="cashback.html">Возврат</a>
+            </li>
+            <li>
+              <a href="#">Карта сезонности</a>
+            </li>
+            <li>
+              <a href="#">Магазины</a>
+            </li>
+          </ul>
+          <ul class="mobile-navigation__list">
+            <li>
+              <span class="mobile-navigation__title">
+                Кабинет
+              </span>
+            </li>
+            <li>
+              <a href="profile.html" >Профиль</a>
+            </li>
+            <li>
+              <a href="#" >Пригласить друга</a>
+            </li>
+            <li>
+              <a href="#">Ваши баллы</a>
+            </li>
+            <li>
+              <a href="#">Ваши отзывы</a>
+            </li>
+            <li>
+              <a href="history.html">История заказов</a>
+            </li>
+            <li>
+              <a href="address.html">Адреса</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
   </div>
