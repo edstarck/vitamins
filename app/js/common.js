@@ -35,15 +35,31 @@ $(function() {
             beforeOpen: function() {
               $('.wrap').addClass('wrap--blur');
               $('body').css({
-                'overflow': 'hidden'
+                'overflow': 'hidden',
+                'padding-right': '17px'
+              });
+              $('.header').css({
+                'padding-right': '17px'
               });
             },
             close: function() {
               $('.wrap').removeClass('wrap--blur');
               if($('.overlay').hasClass('open')) {
-                $('body').css({'overflow': 'hidden'});
+                $('body').css({
+                  'overflow': 'hidden',
+                  'padding-right': '17px'
+                });
+                $('.header').css({
+                  'padding-right': '17px'
+                });
               } else {
-                $('body').css({'overflow': 'auto'});
+                $('body').css({
+                  'overflow': 'auto',
+                  'padding-right': '0px'
+                });
+                $('.header').css({
+                  'padding-right': '0px'
+                });
               }
             }
           }
@@ -186,7 +202,11 @@ $(function() {
       classie.remove( overlay, 'open' );
       classie.add( overlay, 'close' );
       $('body').css({
-        'overflow': 'auto'
+        'overflow': 'auto',
+        'padding-right': '0px'
+      });
+      $('.header').css({
+        'padding-right': '0px'
       });
       var onEndTransitionFn = function( ev ) {
         if( support.transitions ) {
@@ -205,7 +225,11 @@ $(function() {
     else if( !classie.has( overlay, 'close' ) ) {
       classie.add( overlay, 'open' );
       $('body').css({
-        'overflow': 'hidden'
+        'overflow': 'hidden',
+        'padding-right': '17px'
+      });
+      $('.header').css({
+        'padding-right': '17px'
       });
     }
   }
