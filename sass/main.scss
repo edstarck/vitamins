@@ -3360,3 +3360,20 @@ opacity: 0;
     display: block;
   }
 }
+
+.hightliter {
+  position: relative;
+  display: inline-block;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 88px;
+    height: 28px;
+    top: -4px;
+    left: -3px;
+    background-image: url("../img/icons/highlighter.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+  }
+}
