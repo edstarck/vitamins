@@ -170,7 +170,7 @@ fieldset {
   cursor: pointer;
   b {
       position: absolute;
-      right: 0;
+      left: 0;
       width: 20px;
       height: $bar-h;
       background-color: $bar-color;
@@ -469,6 +469,8 @@ fieldset {
     }
   }
   &_phone {
+    display: block;
+    padding-top: 3px;
     color: #fff;
     text-decoration: none;
     font-size: 34px;
@@ -641,7 +643,7 @@ fieldset {
   &_text {
     display: block;
     margin-left: auto;
-    margin-top: 5px;
+    margin-top: 3px;
     font-size: 11px;
     line-height: 1.2;
     text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
@@ -2580,22 +2582,16 @@ transition: opacity 0.35s ease-in-out;
     }
   }
   &_link {
-    color: #ff7b00;
-    font-family: "Spslclarendonc", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .4s ease;
-    box-shadow: 0px 1px 0 0 #ff7b00;
-    &--active {
-      color: #8d7869;
-      box-shadow: none;
+    @extend .menu_link;
+    color: $color-orange;
+    &:after {
+      background-color: $color-orange;
     }
-    &:hover {
-      color: #8d7869;
-      box-shadow: none;
-      transition: all .3s ease;
+    &--active {
+      &:after {
+        transform: scaleX(1);
+        opacity: 1;
+      }
     }
   }
   &_grid {
