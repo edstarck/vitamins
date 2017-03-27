@@ -407,3 +407,50 @@ $(document).ready(function(){
   go();
 
 })();
+
+(function(){
+  var item = document.querySelectorAll('.item_link'),
+      panel = document.querySelector('.order-panel'),
+      cart = document.querySelector('.order-panel__cart');
+
+  var count = 0; // После тестирования удалить вместе с функцией counter() в 430 стр.
+
+  for(var i = 0; i < item.length; i++) {
+    item[i].addEventListener('click', function(e) {
+      activeItem.call( this );
+      showBottomPanel();
+      animationCart.call( this );
+      e.preventDefault();
+      counter(); // После тестирования удалить вместе с функцией counter() в 430 стр.
+    });
+  }
+
+  // Эта функция была предназначена для показания работы корзины после добавления товара.
+  // Ее после интеграции нужно удалить и удалить переменную count в 416 строке.
+  function counter() {
+    count += 1;
+    document.querySelector('.order-panel__cart-total').textContent = count;
+  }
+
+  panel.addEventListener('transitionend', animationCart);
+
+  function activeItem() {
+    this.classList.add('item_link--order');
+    this.textContent = 'в корзине';
+  }
+
+  function showBottomPanel() {
+    var p = panel.classList;
+    p.add('order-panel--show');
+  }
+
+  function animationCart() {
+    cart.classList.add('animate-pulse');
+    cart.addEventListener('animationend', animationCartEnd);
+  }
+
+  function animationCartEnd() {
+    cart.classList.remove('animate-pulse');
+  }
+
+})();
