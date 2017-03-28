@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Ok</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 11.8995 0 -0.0005 17.556 -0.0005 17.556 11.8995"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Promo-code-Field/True" transform="translate(-217.000000, -20.000000)">
+            <g id="Ok" transform="translate(217.000000, 20.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M17.2635,0.2925 C17.0685,0.0975 16.8125,-0.0005 16.5565,-0.0005 C16.3005,-0.0005 16.0445,0.0975 15.8495,0.2925 L6.6575,9.4845 L1.7065,4.5355 C1.5115,4.3405 1.2555,4.2425 0.9995,4.2425 C0.7435,4.2425 0.4885,4.3405 0.2925,4.5355 C-0.0975,4.9265 -0.0975,5.5595 0.2925,5.9495 L5.9505,11.6065 C6.1455,11.8025 6.4015,11.8995 6.6575,11.8995 C6.9125,11.8995 7.1685,11.8025 7.3645,11.6065 L17.2635,1.7075 C17.6545,1.3165 17.6545,0.6835 17.2635,0.2925" id="Fill-1" fill="#B2C543" fill-rule="evenodd" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
