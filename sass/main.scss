@@ -3467,6 +3467,13 @@ opacity: 0;
   @media(min-width: 890px) {
     margin: 0 66px;
   }
+  &:nth-of-type(3) {
+    li {
+      &:last-child {
+        padding-bottom: 50px;
+      }
+    }
+  }
 }
 .overlay .mobile-navigation__title {
   color: #fff;
