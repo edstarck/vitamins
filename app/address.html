@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <title>Профиль</title>
+    <title>Ваши адреса</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,11 +49,11 @@
               <a href="#modal-reg" class="enter_link link-popup">регистрация</a>
           </div>
           <div class="slogan slogan--mobile">
-              <a href="tel:84954090584" class="header_phone">
-                  8 &nbsp495 &nbsp409 <i class="icon-dot"></i> 05 <i class="icon-dot"></i> 84
+              <a href="tel:84955405186" class="header_phone">
+                  8 495 540 <i class="icon-dot"></i> 51 <i class="icon-dot"></i> 86
               </a>
               <div class="slogan_text">
-                Доставляем радость. Приносим пользу.
+                  Фрукты, овощи, сухофрукты со вкусом <br>— такие, какими они и должны быть
               </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
               <div class="wrap_inner">
                   <nav class="profile_menu">
                       <li class="profile_item">
-                          <a href="profile.html" class="profile_link profile_link--active">профиль</a>
+                          <a href="profile.html" class="profile_link">профиль</a>
                       </li>
                       <li class="profile_item">
                           <a href="" class="profile_link">ваши баллы</a>
@@ -76,50 +76,37 @@
                           <a href="history.html" class="profile_link">история заказов</a>
                       </li>
                       <li class="profile_item">
-                          <a href="address.html" class="profile_link">адреса</a>
+                          <a href="address.html" class="profile_link profile_link--active">адреса</a>
                       </li>
                   </nav>
-                  <h2 class="section-title">Профиль</h2>
+                  <h2 class="section-title">Ваши адреса</h2>
                   <div class="rule_text text-page">
-                      <form class="form form_profile" action="" method="post">
-                          <div class="field_row">
-                              <div class="field_label">
-                                  <label for="name">Имя</label>
-                              </div>
-                              <div class="field_input">
-                                  <input id="name" class="field" name="name" type="text" placeholder="Квентин Тарантино" required>
-                              </div>
+                      <p>
+                          Адреса, по которым мы доставляли Вам овощи и фрукты.
+                      </p>
+                  </div>
+                  <div class="profile_grid">
+                      <div class="profile_row">
+                          <div class="profile_date profile_address">
+                              <p>г.Москва, ул. Тверская, дом 15, офис 104</p>
                           </div>
-                          <div class="field_row">
-                              <div class="field_label">
-                                  <label for="phone">Телефон</label>
-                              </div>
-                              <div class="field_input">
-                                  <input id="phone" class="field field_invalid" name="phone" type="tel" placeholder="+7 (943) 666-77-22" required>
-                                  <span></span>
-                                  <span class="error_message">*Сообщение об ошибке</span>
-                              </div>
+                          <div class="profile_more">
+                              <a href="#modal-adress" class="btn link-popup">изменить</a>
                           </div>
-                          <div class="field_row">
-                              <div class="field_label">
-                                  <label for="email">E-mail</label>
-                              </div>
-                              <div class="field_input">
-                                  <input id="email" class="field" name="email" type="email" placeholder="needmoreblood@gmail.com" required>
-                              </div>
+                      </div>
+                      <div class="profile_row">
+                          <div class="profile_date profile_address">
+                              <p>
+                                  г.Москва, ул. Академика Королева, дом 214, корпус 2, квартира 302
+                              </p>
                           </div>
-                          <div class="field_row">
-                              <div class="field_label">
-                                  <label for="password">Пароль</label>
-                              </div>
-                              <div class="field_input">
-                                  <input id="password" class="field field_invalid" name="password" type="password" placeholder="*********">
-                                  <span></span>
-                                  <span class="error_message">*Сообщение об ошибке</span>
-                              </div>
+                          <div class="profile_more">
+                              <a href="#modal-adress" class="btn link-popup">изменить</a>
                           </div>
-                          <button type="submit" class="registration_button btn">сохранить</button>
-                      </form>
+                      </div>
+                      <p class="profile_anymore">
+                          <a href="#modal-adress--add" class="btn link-popup">добавить</a>
+                      </p>
                   </div>
               </div>
           </section>
@@ -206,6 +193,73 @@
     </footer>
 
     <div class="hidden">
+      <div id="modal-adress" class="modal mfp-hide mfp-fade">
+          <button class="modal_close"></button>
+          <h3 class="modal_title section-title">Адрес доставки</h3>
+          <div class="modal_content">
+              <div class="modal_content">
+                  <form class="form form_adress" action="" method="post">
+                      <div class="form_adress-row">
+                          <div class="form_group">
+                              <label for="street">Улица</label>
+                              <input id="street" class="field field_street" name="street" type="text" placeholder="Новослободская-Ямская">
+                          </div>
+                          <div class="form_home-row">
+                              <div class="form_group">
+                                  <label for="house">Дом</label>
+                                  <input id="house" class="field field_house" name="house" type="text" >
+                              </div>
+                              <div class="form_group">
+                                  <label for="corpuse">Корпус</label>
+                                  <input id="corpuse" class="field field_corpuse" name="corpuse" type="text" >
+                              </div>
+                              <div class="form_group">
+                                  <label for="flat">Кв/Офис</label>
+                                  <input id="flat" class="field field_flat" name="flat" type="text" >
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form_button-group">
+                          <button type="submit" class="registration_button btn">сохранить</button>
+                          <button type="submit" class="registration_button btn btn--red">удалить</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="modal-adress--add" class="modal mfp-hide mfp-fade">
+          <button class="modal_close"></button>
+          <h3 class="modal_title section-title">Адрес доставки</h3>
+          <div class="modal_content">
+              <div class="modal_content">
+                  <form class="form form_adress" action="" method="post">
+                      <div class="form_adress-row">
+                          <div class="form_group">
+                              <label for="street">Улица</label>
+                              <input id="street" class="field field_street" name="street" type="text" placeholder="Новослободская-Ямская">
+                          </div>
+                          <div class="form_home-row">
+                              <div class="form_group">
+                                  <label for="house">Дом</label>
+                                  <input id="house" class="field field_house" name="house" type="text" >
+                              </div>
+                              <div class="form_group">
+                                  <label for="corpuse">Корпус</label>
+                                  <input id="corpuse" class="field field_corpuse" name="corpuse" type="text" >
+                              </div>
+                              <div class="form_group">
+                                  <label for="flat">Кв/Офис</label>
+                                  <input id="flat" class="field field_flat" name="flat" type="text" >
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form_button-group">
+                          <button type="submit" class="registration_button btn">добавить</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
       <div id="modal-reg--order" class="modal mfp-hide mfp-fade">
           <button class="modal_close"></button>
           <h3 class="modal_title section-title">Ваш заказ оформлен!</h3>

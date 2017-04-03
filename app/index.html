@@ -89,7 +89,7 @@
                       8 <i class="icon-dot"></i> 495 <i class="icon-dot"></i> 409 <i class="icon-dot"></i> 05 <i class="icon-dot"></i> 84
                   </a>
                   <div class="slogan_text">
-                      Доставляем радость. Приносим пользу.
+                    <span>Доставляем радость.</span> <span>Приносим пользу.</span>
                   </div>
               </div>
             </div>
@@ -1206,7 +1206,9 @@
               <form class="form" action="" method="post">
                   <div class="form_group">
                       <label for="email">Ваш E-mail</label>
-                      <input id="email" class="field" name="email" type="text" placeholder="jora@leto.ru">
+                      <div class="field_input">
+                        <input id="email" class="field" name="email" type="text" placeholder="jora@leto.ru">
+                      </div>
                   </div>
                   <div class="form_button-group">
                       <button type="submit" class="btn btn--lg">Отправить</button>
@@ -1221,14 +1223,18 @@
               <form class="form" action="" method="post">
                   <div class="form_group">
                       <label for="email">Ваш E-mail</label>
-                      <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru"><span></span>
-                      <span class="error_message">*Сообщение об ошибке</span>
+                      <div class="field_input">
+                        <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru"><span></span>
+                        <span class="error_message">*Сообщение об ошибке</span>
+                      </div>
                   </div>
                   <div class="form_group">
                       <label for="password">Пароль</label>
-                      <input id="password" class="field field_invalid" name="password" type="password" required>
-                      <span></span>
-                      <span class="error_message">*Сообщение об ошибке</span>
+                      <div class="field_input">
+                        <input id="password" class="field field_invalid" name="password" type="password" required>
+                        <span></span>
+                        <span class="error_message">*Сообщение об ошибке</span>
+                      </div>
                   </div>
                   <div class="form_group">
                       <a href="recovery-pass.html" class="foget_link">Забыли пароль?</a>
@@ -1249,25 +1255,35 @@
                       <div class="field_label">
                           <label for="name">Имя</label>
                       </div>
-                      <input id="name" class="field field_invalid" name="name" type="text" placeholder="Квентин Тарантино"><span></span>
-                      <span class="error_message">*Сообщение об ошибке</span>
+                      <div class="field_input">
+                        <input id="name" class="field field_invalid" name="name" type="text" placeholder="Квентин Тарантино"><span></span>
+                        <span class="error_message">*Сообщение об ошибке</span>
+                      </div>
                   </div>
                   <div class="form_group">
                       <label for="phone">Телефон</label>
-                      <input id="phone" class="field" name="phone" type="text" placeholder="+7 (495) 666-77-22">
+                      <div class="field_input">
+                        <input id="phone" class="field" name="phone" type="text" placeholder="+7 (495) 666-77-22">
+                      </div>
                   </div>
                   <div class="form_group">
                       <label for="email">E-mail</label>
-                      <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru"><span></span>
-                      <span class="error_message">*Сообщение об ошибке</span>
+                      <div class="field_input">
+                        <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru"><span></span>
+                        <span class="error_message">*Сообщение об ошибке</span>
+                      </div>
                   </div>
                   <div class="form_group">
                       <label for="password">Пароль</label>
-                      <input id="password" class="field" name="password" type="password">
+                      <div class="field_input">
+                        <input id="password" class="field" name="password" type="password">
+                      </div>
                   </div>
                   <div class="form_group">
                       <label for="password">Подтверждение</label>
-                      <input id="password" class="field" name="password" type="password">
+                      <div class="field_input">
+                        <input id="password" class="field" name="password" type="password">
+                      </div>
                   </div>
                   <div class="form_button-group">
                       <button type="submit" class="registration_button btn btn--facebook">Войти через Facebook</button>

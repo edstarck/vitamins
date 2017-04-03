@@ -37,7 +37,9 @@ $(function() {
           callbacks: {
             beforeOpen: function() {
               $('.wrap').addClass('wrap--blur');
+              $('.wrap').bind('touchmove', false);
               $('body').css({
+                'height': '100vh',
                 'overflow': 'hidden',
                 'padding-right': widthScrollBar + 'px'
               });
@@ -47,8 +49,10 @@ $(function() {
             },
             close: function() {
               $('.wrap').removeClass('wrap--blur');
+              $('.wrap').unbind('touchmove');
               if($('.overlay').hasClass('open')) {
                 $('body').css({
+                  'height': '100vh',
                   'overflow': 'hidden',
                   'padding-right': widthScrollBar + 'px'
                 });
@@ -57,6 +61,7 @@ $(function() {
                 });
               } else {
                 $('body').css({
+                  'height': 'auto',
                   'overflow': 'auto',
                   'padding-right': '0px'
                 });
@@ -134,7 +139,6 @@ $(function() {
 });
 
 // STICKY HEADER
-
 (function(){
 
   var offsetTopPanel = 140;
@@ -187,7 +191,7 @@ $(function() {
 
 // Overlay
 (function() {
-var windowWidth    = document.documentElement.clientWidth,
+  var windowWidth = document.documentElement.clientWidth,
           windowAllWidth = window.innerWidth,
           widthScrollBar = windowAllWidth - windowWidth;
   var triggerBttn = $('.trigger-overlay'),
@@ -208,6 +212,7 @@ var windowWidth    = document.documentElement.clientWidth,
       classie.remove( overlay, 'open' );
       classie.add( overlay, 'close' );
       $('body').css({
+        'height': 'auto',
         'overflow': 'auto',
         'padding-right': '0px'
       });
@@ -231,6 +236,7 @@ var windowWidth    = document.documentElement.clientWidth,
     else if( !classie.has( overlay, 'close' ) ) {
       classie.add( overlay, 'open' );
         $('body').css({
+          'height': '100vh',
           'overflow': 'hidden',
           'padding-right': widthScrollBar + 'px'
         });
@@ -396,9 +402,19 @@ $(document).ready(function(){
 
   function go(){
     var x = window.innerWidth;
+    var h = document.documentElement.clientHeight;
+    $('.nav-box').css({
+      'height': (h - 160) + 'px'
+    });
     if(x <= 754) {
       morulusCustomSb(document.querySelector('.nav-box'));
       window.removeEventListener('resize', go);
+      $(window).resize(function() {
+        var h = document.documentElement.clientHeight;
+        $('.nav-box').css({
+          'height': (h - 160) + 'px'
+        });
+      })
     } else if (x >= 754) {
       window.addEventListener('resize', go);
     }
@@ -408,6 +424,7 @@ $(document).ready(function(){
 
 })();
 
+//order panel
 (function(){
   var item = document.querySelectorAll('.item_link'),
       panel = document.querySelector('.order-panel'),
@@ -432,7 +449,9 @@ $(document).ready(function(){
     document.querySelector('.order-panel__cart-total').textContent = count;
   }
 
-  panel.addEventListener('transitionend', animationCart);
+  if(panel in window) {
+    panel.addEventListener('transitionend', animationCart);
+  }
 
   function activeItem() {
     this.classList.add('item_link--order');

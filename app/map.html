@@ -33,7 +33,7 @@
 
   <div class="wrap">
     <div class="wrap__content">
-      <header class="header header--inner">
+      <header class="header--inner">
         <div class="wrap_inner">
           <div class="logo logo--mobile">
             <a href="/">
@@ -860,31 +860,34 @@
             </div>
         </div>
         <div id="modal-login" class="modal mfp-hide mfp-fade">
-            <button class="modal_close"></button>
-            <h3 class="modal_title section-title">Авторизация</h3>
-            <div class="modal_content">
-                <form class="form" action="" method="post">
-                    <div class="form_group">
-                        <label for="email">Ваш E-mail</label>
-                        <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru">
-                        <span></span>
+          <button class="modal_close"></button>
+          <h3 class="modal_title section-title">Авторизация</h3>
+          <div class="modal_content">
+              <form class="form" action="" method="post">
+                  <div class="form_group">
+                      <label for="email">Ваш E-mail</label>
+                      <div class="field_input">
+                        <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru"><span></span>
                         <span class="error_message">*Сообщение об ошибке</span>
-                    </div>
-                    <div class="form_group">
-                        <label for="password">Пароль</label>
+                      </div>
+                  </div>
+                  <div class="form_group">
+                      <label for="password">Пароль</label>
+                      <div class="field_input">
                         <input id="password" class="field field_invalid" name="password" type="password" required>
                         <span></span>
                         <span class="error_message">*Сообщение об ошибке</span>
-                    </div>
-                    <div class="form_group">
-                        <a href="recovery-pass.html" class="foget_link">Забыли пароль?</a>
-                    </div>
-                    <div class="form_button-group">
-                        <button type="submit" class="registration_button btn btn--lg">авторизация</button>
-                        <a href="#modal-reg" class="form_link link-popup">Зарегистрироваться</a>
-                    </div>
-                </form>
-            </div>
+                      </div>
+                  </div>
+                  <div class="form_group">
+                      <a href="recovery-pass.html" class="foget_link">Забыли пароль?</a>
+                  </div>
+                  <div class="form_button-group">
+                      <button type="submit" class="registration_button btn btn--lg">авторизация</button>
+                      <a href="#modal-reg" class="form_link link-popup">Зарегистрироваться</a>
+                  </div>
+              </form>
+          </div>
         </div>
         <div id="modal-reg" class="modal mfp-hide mfp-fade">
             <button class="modal_close"></button>
@@ -895,27 +898,35 @@
                         <div class="field_label">
                             <label for="name">Имя</label>
                         </div>
-                            <input id="name" class="field field_invalid" name="name" type="text" placeholder="Квентин Тарантино">
-                        <span></span>
-                        <span class="error_message">*Сообщение об ошибке</span>
+                        <div class="field_input">
+                          <input id="name" class="field field_invalid" name="name" type="text" placeholder="Квентин Тарантино"><span></span>
+                          <span class="error_message">*Сообщение об ошибке</span>
+                        </div>
                     </div>
                     <div class="form_group">
                         <label for="phone">Телефон</label>
-                        <input id="phone" class="field" name="phone" type="text" placeholder="+7 (495) 666-77-22">
+                        <div class="field_input">
+                          <input id="phone" class="field" name="phone" type="text" placeholder="+7 (495) 666-77-22">
+                        </div>
                     </div>
                     <div class="form_group">
                         <label for="email">E-mail</label>
-                        <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru">
-                        <span></span>
-                        <span class="error_message">*Сообщение об ошибке</span>
+                        <div class="field_input">
+                          <input id="email" class="field field_invalid" name="email" type="text" placeholder="jora@leto.ru"><span></span>
+                          <span class="error_message">*Сообщение об ошибке</span>
+                        </div>
                     </div>
                     <div class="form_group">
                         <label for="password">Пароль</label>
-                        <input id="password" class="field" name="password" type="password">
+                        <div class="field_input">
+                          <input id="password" class="field" name="password" type="password">
+                        </div>
                     </div>
                     <div class="form_group">
                         <label for="password">Подтверждение</label>
-                        <input id="password" class="field" name="password" type="password">
+                        <div class="field_input">
+                          <input id="password" class="field" name="password" type="password">
+                        </div>
                     </div>
                     <div class="form_button-group">
                         <button type="submit" class="registration_button btn btn--facebook">Войти через Facebook</button>
