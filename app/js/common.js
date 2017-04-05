@@ -26,7 +26,10 @@ $(function() {
   $(function(){
       var windowWidth    = document.documentElement.clientWidth,
           windowAllWidth = window.innerWidth,
-          widthScrollBar = windowAllWidth - windowWidth;
+          widthScrollBar = windowAllWidth - windowWidth,
+          wrap = document.querySelector('.wrap');
+      var popup_bodyTop = 0;
+      var popup_bodyLeft = 0;
       var magnificPopup = $.magnificPopup.instance;
       $('.link-popup').magnificPopup({
           type: 'inline',
@@ -37,34 +40,21 @@ $(function() {
           callbacks: {
             beforeOpen: function() {
               $('.wrap').addClass('wrap--blur');
-              $('.wrap').bind('touchmove', false);
-              $('body').css({
-                'height': '100vh',
-                'overflow': 'hidden',
-                'padding-right': widthScrollBar + 'px'
-              });
+              $('body').addClass('fixed');
               $('.header').css({
                 'padding-right': widthScrollBar + 'px'
               });
             },
             close: function() {
               $('.wrap').removeClass('wrap--blur');
-              $('.wrap').unbind('touchmove');
+              $('body').removeClass('fixed');
               if($('.overlay').hasClass('open')) {
-                $('body').css({
-                  'height': '100vh',
-                  'overflow': 'hidden',
-                  'padding-right': widthScrollBar + 'px'
-                });
+                $('body').addClass('fixed');
                 $('.header').css({
                   'padding-right': widthScrollBar + 'px'
                 });
               } else {
-                $('body').css({
-                  'height': 'auto',
-                  'overflow': 'auto',
-                  'padding-right': '0px'
-                });
+                $('body').removeClass('fixed');
                 $('.header').css({
                   'padding-right': '0px'
                 });
@@ -140,8 +130,12 @@ $(function() {
 
 // STICKY HEADER
 (function(){
-
-  var offsetTopPanel = 140;
+  var offsetTopPanel = 0;
+  if(window.innerWidth >= 1000) {
+    offsetTopPanel = 140;
+  } else {
+    offsetTopPanel = 0;
+  }
 
   function fixedNav() {
     if (window.pageYOffset >= offsetTopPanel) {
@@ -211,11 +205,8 @@ $(function() {
     if( classie.has( overlay, 'open' ) ) {
       classie.remove( overlay, 'open' );
       classie.add( overlay, 'close' );
-      $('body').css({
-        'height': 'auto',
-        'overflow': 'auto',
-        'padding-right': '0px'
-      });
+      $('body').removeClass('fixed');
+      $('.wrap').removeClass('wrap--fixed');
       $('.header').css({
         'padding-right': '0px'
       });
@@ -235,11 +226,8 @@ $(function() {
     }
     else if( !classie.has( overlay, 'close' ) ) {
       classie.add( overlay, 'open' );
-        $('body').css({
-          'height': '100vh',
-          'overflow': 'hidden',
-          'padding-right': widthScrollBar + 'px'
-        });
+        $('.wrap').addClass('wrap--fixed');
+        $('body').addClass('fixed');
         $('.header').css({
           'padding-right': widthScrollBar + 'px'
         });
@@ -275,7 +263,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.enter--mobile').clone().appendTo('.overlay__enter');
+  $('.enter--mobile').clone(true).appendTo('.overlay__enter');
 });
 
 // Mobile menu
@@ -496,7 +484,7 @@ $(".custom-option:first-of-type").hover(function() {
 }, function() {
   $(this).parents(".custom-options").removeClass("option-hover");
 });
-$(".custom-select-trigger").on("click", function() {
+$(".custom-select-trigger").on("click", function(event) {
   $('html').one('click',function() {
     $(".custom-select").removeClass("opened");
   });

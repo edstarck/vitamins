@@ -52,7 +52,7 @@
             </div>
             <nav class="header_menu menu">
               <li class="menu_item">
-                  <a href="" class="menu_link">доставка</a>
+                  <a href="delivery.html" class="menu_link">доставка</a>
               </li>
               <li class="menu_item">
                   <a href="" class="menu_link menu_link--active">оплата</a>
@@ -61,7 +61,7 @@
                   <a href="" class="menu_link">заказ</a>
               </li>
               <li class="menu_item">
-                  <a href="" class="menu_link">возврат</a>
+                  <a href="cashback.html" class="menu_link">возврат</a>
               </li>
               <li class="menu_item">
                   <a href="map.html" class="menu_link">карта сезонности</a>
@@ -173,10 +173,10 @@
                       <div class="price-num">
                           <div class="number">
                               <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
-                              <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                              <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">23</span>кг</span>
                               <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
                           </div>
-                          <span class="item_total">3кг</span>
+                          <span class="item_total">23кг</span>
                           <span class="item_price">352 P</span>
                       </div>
                       <a href="" class="item_link">заказать</a>
@@ -200,10 +200,10 @@
                           <div class="number">
                               <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
                               <span>
-                                  <span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                  <span class="prodCount ng-binding" ng-bind="product.c*product.step">23</span>кг</span>
                               <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
                           </div>
-                          <span class="item_total">3кг</span>
+                          <span class="item_total">23кг</span>
                           <span class="item_price">352 P</span>
                       </div>
                       <a href="" class="item_link">заказать</a>
@@ -278,10 +278,10 @@
                             <div class="number">
                                 <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
                                 <span>
-                                    <span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                                    <span class="prodCount ng-binding" ng-bind="product.c*product.step">23</span>кг</span>
                                 <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
                             </div>
-                            <span class="item_total">3кг</span>
+                            <span class="item_total">23кг</span>
                             <span class="item_price">352 P</span>
                         </div>
                         <a href="" class="item_link">Заказать</a>
@@ -336,10 +336,10 @@
                       <div class="price-num">
                           <div class="number">
                               <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
-                              <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                              <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">23</span>кг</span>
                               <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
                           </div>
-                          <span class="item_total">3кг</span>
+                          <span class="item_total">23кг</span>
                           <span class="item_price">352 P</span>
                       </div>
                       <a href="" class="item_link">заказать</a>
@@ -721,23 +721,105 @@
     </footer>
 
     <div class="order-panel">
-      <div class="order-panel__box">
-        <div class="order-panel__cart">
-          <div class="order-panel__cart-ratio"></div>
-          <div class="order-panel__cart-total">15</div>
+      <div class="order-panel__wrap">
+        <div class="order-panel__box">
+          <div class="order-panel__cart">
+            <div class="order-panel__cart-ratio"></div>
+            <div class="order-panel__cart-total">15</div>
+          </div>
+          <div class="order-panel__cost">
+            <ul>
+              <li>В вашем заказе <strong>15</strong>&nbspпродуктов, сумма заказа <strong>&nbsp1&nbsp510&nbspP</strong>.</li>
+              <li>Стоимость доставки <strong>500&nbspP</strong>, бесплатная доставка от&nbsp<strong>2500&nbspP</strong>.</li>
+              <li>
+                Получи <span class="hightliter">подарок</span> по промо-коду при заказе больше&nbsp<strong>2500&nbspP</strong>.
+              </li>
+            </ul>
+          </div>
+          <div class="order-panel__button">
+            <a href="#modal-more2" class="btn link-popup btn--lg">оформить заказ</a>
+          </div>
         </div>
-        <div class="order-panel__cost">
-          <ul>
-            <li>В вашем заказе <strong>15</strong> продуктов, сумма заказа <strong>1 510 P</strong>.</li>
-            <li>Стоимость доставки <strong>500 P</strong>, бесплатная доставка от <strong>2500 P</strong>.</li>
+      </div>
+    </div>
+
+    <div class="overlay overlay-slidedown">
+      <div class="overlay__enter"></div>
+      <div class="nav-box">
+        <nav class="mobile-navigation">
+          <ul class="mobile-navigation__list">
             <li>
-              Получи <span class="hightliter">подарок</span> по промо-коду при заказе больше <strong>2500 P</strong>.
+              <span class="mobile-navigation__title">
+                Прилавок
+              </span>
+            </li>
+            <li>
+              <a href="#" >Фрукты</a>
+            </li>
+            <li>
+              <a href="#" >Овощи</a>
+            </li>
+            <li>
+              <a href="#">Сухофрукты</a>
+            </li>
+            <li>
+              <a href="#">Специи</a>
+            </li>
+            <li>
+              <a href="#">Сеты</a>
             </li>
           </ul>
-        </div>
-        <div class="order-panel__button">
-          <a href="#modal-more2" class="btn link-popup btn--lg">оформить заказ</a>
-        </div>
+          <ul class="mobile-navigation__list">
+            <li>
+              <span class="mobile-navigation__title">
+                О сервисе
+              </span>
+            </li>
+            <li>
+              <a href="delivery.html" >Доставка</a>
+            </li>
+            <li>
+              <a href="#" >Оплата</a>
+            </li>
+            <li>
+              <a href="order.html">Заказ</a>
+            </li>
+            <li>
+              <a href="cashback.html">Возврат</a>
+            </li>
+            <li>
+              <a href="map.html">Карта сезонности</a>
+            </li>
+            <li>
+              <a href="#">Магазины</a>
+            </li>
+          </ul>
+          <ul class="mobile-navigation__list">
+            <li>
+              <span class="mobile-navigation__title">
+                Кабинет
+              </span>
+            </li>
+            <li>
+              <a href="profile.html" >Профиль</a>
+            </li>
+            <li>
+              <a href="#" >Пригласить друга</a>
+            </li>
+            <li>
+              <a href="#">Ваши баллы</a>
+            </li>
+            <li>
+              <a href="#">Ваши отзывы</a>
+            </li>
+            <li>
+              <a href="history.html">История заказов</a>
+            </li>
+            <li>
+              <a href="address.html">Адреса</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 
@@ -792,7 +874,14 @@
                               <span class="modal_wash modal_wash--active"></span>
                           </div>
                           <div class="modal_weight">
-                              <span>3 кг</span>
+                            <div class="number">
+                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">23</span>кг</span>
+                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                <div class="number__text">
+                                  <span>Удалить из корзины</span>
+                                </div>
+                            </div>
                           </div>
                           <div class="modal_price">
                               <span>352 P</span>
@@ -812,7 +901,14 @@
                               <span class="modal_wash"></span>
                           </div>
                           <div class="modal_weight">
-                              <span>300 кг</span>
+                            <div class="number">
+                              <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                              <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                              <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                              <div class="number__text">
+                                <span>Удалить из корзины</span>
+                              </div>
+                            </div>
                           </div>
                           <div class="modal_price">
                               <span>133352 P</span>
@@ -832,7 +928,14 @@
                               <span class="modal_wash"></span>
                           </div>
                           <div class="modal_weight">
-                              <span>100 г</span>
+                              <div class="number">
+                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">100</span>г</span>
+                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                <div class="number__text">
+                                  <span>Удалить из корзины</span>
+                                </div>
+                            </div>
                           </div>
                           <div class="modal_price">
                               <span class="hightliter">0 P</span>
@@ -1291,86 +1394,6 @@
                   </div>
               </form>
           </div>
-      </div>
-    </div>
-
-    <div class="overlay overlay-slidedown">
-      <div class="overlay__enter"></div>
-      <div class="nav-box">
-        <nav class="mobile-navigation">
-          <ul class="mobile-navigation__list">
-            <li>
-              <span class="mobile-navigation__title">
-                Прилавок
-              </span>
-            </li>
-            <li>
-              <a href="#" >Фрукты</a>
-            </li>
-            <li>
-              <a href="#" >Овощи</a>
-            </li>
-            <li>
-              <a href="#">Сухофрукты</a>
-            </li>
-            <li>
-              <a href="#">Специи</a>
-            </li>
-            <li>
-              <a href="#">Сеты</a>
-            </li>
-          </ul>
-          <ul class="mobile-navigation__list">
-            <li>
-              <span class="mobile-navigation__title">
-                О сервисе
-              </span>
-            </li>
-            <li>
-              <a href="delivery.html" >Доставка</a>
-            </li>
-            <li>
-              <a href="#" >Оплата</a>
-            </li>
-            <li>
-              <a href="order.html">Заказ</a>
-            </li>
-            <li>
-              <a href="cashback.html">Возврат</a>
-            </li>
-            <li>
-              <a href="map.html">Карта сезонности</a>
-            </li>
-            <li>
-              <a href="#">Магазины</a>
-            </li>
-          </ul>
-          <ul class="mobile-navigation__list">
-            <li>
-              <span class="mobile-navigation__title">
-                Кабинет
-              </span>
-            </li>
-            <li>
-              <a href="profile.html" >Профиль</a>
-            </li>
-            <li>
-              <a href="#" >Пригласить друга</a>
-            </li>
-            <li>
-              <a href="#">Ваши баллы</a>
-            </li>
-            <li>
-              <a href="#">Ваши отзывы</a>
-            </li>
-            <li>
-              <a href="history.html">История заказов</a>
-            </li>
-            <li>
-              <a href="address.html">Адреса</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
 

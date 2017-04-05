@@ -549,7 +549,24 @@
     <div class="hidden">
       <div id="modal-more2" class="modal modal_history mfp-hide mfp-fade">
           <button class="modal_close"></button>
-          <h3 class="modal_title section-title">Заказ #471516</h3>
+          <h3 class="modal_title section-title">Оформление заказа</h3>
+          <div class="step-level">
+            <ul>
+              <li>
+                <span class="step-level__item step-level__item--active">1</span>
+                <span class="step-level__text text step-level__text--active">Заказ</span>
+              </li>
+              <li>
+                <span class="step-level__item step-level__item--gray">2</span>
+                <span class="step-level__text step-level__text--gray">Оформление</span>
+              </li>
+            </ul>
+          </div>
+          <div class="modal__heading">
+            <p>
+              Закажите продуктов на <strong>2500 Р</strong> и мы доствим заказ бесплатно!
+            </p>
+          </div>
           <div class="modal_content">
               <div class="modal_table">
                   <div class="modal_detailes">
@@ -573,17 +590,24 @@
                               </figure>
                               <div class="modal_product-title">
                                   <h4>Нежные персики</h4>
-                                  <span class="modal_tth">128&#8381; / 1 кг</span>
+                                  <span class="modal_tth">128 P / 1 кг</span>
                               </div>
                           </div>
                           <div class="modal_icon">
                               <span class="modal_wash modal_wash--active"></span>
                           </div>
                           <div class="modal_weight">
-                              <span>3 кг</span>
+                            <div class="number">
+                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">23</span>кг</span>
+                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                <div class="number__text">
+                                  <span>Удалить из корзины</span>
+                                </div>
+                            </div>
                           </div>
                           <div class="modal_price">
-                              <span>352 <i class="icon-rub--gray"></i></span>
+                              <span>352 P</span>
                           </div>
                       </div>
                       <div class="modal_row">
@@ -593,17 +617,51 @@
                               </figure>
                               <div class="modal_product-title">
                                   <h4>Нежные персики</h4>
-                                  <span class="modal_tth">128&#8381; / 1 кг</span>
+                                  <span class="modal_tth">128 P / 1 кг</span>
                               </div>
                           </div>
                           <div class="modal_icon">
                               <span class="modal_wash"></span>
                           </div>
                           <div class="modal_weight">
-                              <span>300 кг</span>
+                            <div class="number">
+                              <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                              <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">3</span>кг</span>
+                              <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                              <div class="number__text">
+                                <span>Удалить из корзины</span>
+                              </div>
+                            </div>
                           </div>
                           <div class="modal_price">
-                              <span>133352 <i class="icon-rub--gray"></i></span>
+                              <span>133352 P</span>
+                          </div>
+                      </div>
+                      <div class="modal_row">
+                          <div class="modal_desc">
+                              <figure class="modal_picture">
+                                  <img src="img/picture/small-ftuit.jpg" alt="">
+                              </figure>
+                              <div class="modal_product-title">
+                                  <h4>Ежевика</h4>
+                                  <span class="modal_tth">Подарок по промо-коду</span>
+                              </div>
+                          </div>
+                          <div class="modal_icon">
+                              <span class="modal_wash"></span>
+                          </div>
+                          <div class="modal_weight">
+                              <div class="number">
+                                <i class="minus noselect" ng-click="recount_product(product, 'minus')"></i>
+                                <span><span class="prodCount ng-binding" ng-bind="product.c*product.step">100</span>г</span>
+                                <i class="plus noselect" ng-click="recount_product(product, 'plus')"></i>
+                                <div class="number__text">
+                                  <span>Удалить из корзины</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="modal_price">
+                              <span class="hightliter">0 P</span>
                           </div>
                       </div>
                   </div>
@@ -617,22 +675,263 @@
                                   <li>
                                       <span class="modal_check-order">
                                           <span class="modal_check-title">Сумма заказа</span>
-                                          <span class="modal_check-price">1 325 <i class="icon-rub--brown"></i></span>
+                                          <span class="modal_check-price">1 325 Р</span>
                                       </span>
                                   </li>
                                   <li>
                                       <span class="modal_check-order">
                                           <span class="modal_check-title">Доставка</span>
-                                          <span class="modal_check-price">300 <i class="icon-rub--brown"></i></span>
+                                          <span class="modal_check-price">300 Р</span>
                                       </span>
                                   </li>
                                   <li>
-                                      <span class="modal_check-order--total">
-                                          <span class="modal_check-order-title">Итого</span>
-                                          <span class="modal_check-order-price">110 625 <i class="icon-rub--gray"></i></span>
+                                    <span class="modal_check-order">
+                                        <span class="modal_check-title">Помыть бананы</span>
+                                        <span class="modal_check-price">36 P</span>
+                                    </span>
+                                  </li>
+                                  <li>
+                                      <span class="modal_check-order">
+                                          <span class="modal_check-title">Сумма заказа</span>
+                                          <span class="modal_check-price">1 325 Р</span>
                                       </span>
                                   </li>
+                                  <li>
+                                      <span class="modal_check-order">
+                                          <span class="modal_check-title">Доставка</span>
+                                          <span class="modal_check-price">300 Р</span>
+                                      </span>
+                                  </li>
+                                  <li>
+                                    <span class="modal_check-order">
+                                        <span class="modal_check-title">Помыть бананы</span>
+                                        <span class="modal_check-price">36 P</span>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span class="modal_check-order">
+                                        <span class="modal_check-title">Помыть виноград красный чилийский</span>
+                                        <span class="modal_check-price">72 P</span>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span class="modal_check-order">
+                                        <span class="modal_check-title hightliter">Ежевика в подарок</span>
+                                        <span class="modal_check-price">0 P</span>
+                                    </span>
+                                  </li>
                               </ul>
+                              <div class="modal_check-order--total">
+                                <span class="modal_check-order-title">Итого</span>
+                                <span class="modal_check-order-price">110 625 Р</span>
+                              </div>
+                              <form action="" class="modal_check-order_form">
+                                <input type="text" value="spring2017" id="before" class="field_invalid" required>
+                                <span></span>
+                                <a href="#modal-more3" class="btn link-popup btn--lg">оформить заказ</a>
+                              </form>
+                              <div class="modal_check-order_end">
+                                <p>
+                                    Итоговая сумма может немного измениться в результате взвешивания.
+                                </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="total_mobile">
+                  <div class="modal_check-total">
+                    <ul>
+                        <li>
+                            <span class="modal_check-order">
+                                <span class="modal_check-title">Сумма заказа</span>
+                                <span class="modal_check-price">1 325 P</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="modal_check-order">
+                                <span class="modal_check-title">Доставка</span>
+                                <span class="modal_check-price">300 P</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="modal_check-order">
+                                <span class="modal_check-title">Помыть бананы</span>
+                                <span class="modal_check-price">36 P</span>
+                            </span>
+                        </li>
+                        <li>
+                          <span class="modal_check-order">
+                              <span class="modal_check-title">Помыть виноград красный чилийский</span>
+                              <span class="modal_check-price">72 P</span>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="modal_check-order">
+                              <span class="modal_check-title hightliter">Ежевика в подарок</span>
+                              <span class="modal_check-price">0 P</span>
+                          </span>
+                        </li>
+                    </ul>
+                    <div class="modal_check-order--total">
+                      <span class="modal_check-order-title">Итого</span>
+                      <span class="modal_check-order-price">110 625 Р</span>
+                    </div>
+                    <form action="" class="modal_check-order_form">
+                      <input type="text" value="spring2017" id="before" class="field_invalid" required>
+                      <span></span>
+                      <a href="#modal-more3" class="btn link-popup btn--lg">оформить заказ</a>
+                    </form>
+                    <div class="modal_check-order_end">
+                      <p>
+                          Итоговая сумма может немного измениться в результате взвешивания.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="modal-more3" class="modal modal_history mfp-hide mfp-fade">
+          <button class="modal_close"></button>
+          <h3 class="modal_title section-title">Оформление заказа</h3>
+          <div class="step-level">
+            <ul>
+              <li>
+                <span class="step-level__item step-level__item--green">1</span>
+                <span class="step-level__text step-level__text--active">Заказ</span>
+              </li>
+              <li>
+                <span class="step-level__item step-level__item--active">2</span>
+                <span class="step-level__text step-level__text--active">Оформление</span>
+              </li>
+            </ul>
+          </div>
+          <div class="modal__heading">
+            <p>
+              Закажите продуктов на <strong>2500 Р</strong> и мы доствим заказ бесплатно!
+            </p>
+          </div>
+          <div class="modal_content">
+              <div class="modal_table">
+                  <div class="modal_detailes">
+                    <form class="form form-order-step" action="" method="post">
+                      <div class="form_group">
+                          <div class="field_label">
+                              <label for="name">Ваше имя*</label>
+                          </div>
+                          <div class="field_input">
+                              <input id="name" class="field field_invalid" name="name" type="text" value="Владимир" required><span class="field_invalid-point"></span>
+                          </div>
+                          <span class="error_message">*Сообщение об ошибке</span>
+                      </div>
+                      <div class="form_group">
+                          <label for="phone">Номер телефон*</label>
+                          <input id="phone" class="field field_load" name="phone" type="text" value="+7 (495) 666-77-22" required><span></span>
+                      </div>
+                      <div class="form_group">
+                          <label for="email">E-mail</label>
+                          <input id="email" class="field field_ok" name="email" type="text" value="jora@leto.ru"><span></span>
+                      </div>
+                      <div class="form_group">
+                          <label for="password">Пароль</label>
+                          <input id="password" class="field" name="password" type="password">
+                      </div>
+                      <div class="form_button-group">
+                          <button type="submit" class="registration_button btn btn--facebook">Войти через Facebook</button>
+                          <button type="submit" class="registration_button btn btn--reg">регистрация</button>
+                      </div>
+                      <div class="form_group form_group--address">
+                          <label for="password">Адрес доставки*</label>
+                          <select name="box" id="box" class="custom-select sources" placeholder="ул. Свободы, дом 43, корп. 2, кв/оф. 713">
+                            <option value="profile">ул. Свободы, дом 43, корп. 2, кв/оф. 713</option>
+                            <option value="word">ул. Малая Бронная, дом 2, кв/оф. 10</option>
+                            <option value="hashtag">ул. Малая Бронная, дом 2, кв/оф. 10</option>
+                          </select>
+                          <div class="form_home-row">
+                              <div class="form_group">
+                                <input id="house" class="field field_house" name="house" type="text" placeholder="Дом">
+                              </div>
+                              <div class="form_group">
+                                <input id="corpuse" class="field field_corpuse" name="corpuse" type="text" placeholder="Корп.">
+                              </div>
+                              <div class="form_group">
+                                <input id="flat" class="field field_flat" name="flat" type="text" placeholder="Кв/Оф">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form_group">
+                          <label for="password">Тип упаковки</label>
+                          <select name="box" id="box" class="custom-select sources" placeholder="Коробка">
+                            <option value="profile">Чемодан</option>
+                            <option value="word">Коробка</option>
+                            <option value="hashtag">Пакет</option>
+                          </select>
+                      </div>
+                      <div class="form_group">
+                          <label for="password">Способы оплаты</label>
+                          <select name="card" id="card" class="custom-select sources" placeholder="Картой на сайте">
+                            <option value="profile">Картой на сайте</option>
+                            <option value="word">Курьеру картой</option>
+                            <option value="hashtag">Курьеру наличными</option>
+                          </select>
+                      </div>
+                      <div class="form_group">
+                          <label for="password">Комментарий</label>
+                          <textarea name="" id="" class="field field_message"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal_total">
+                      <div class="modal_kassa">
+                          <div class="modal_kassa--inner"></div>
+                      </div>
+                      <div class="modal_check">
+                          <div class="modal_check-total">
+                              <ul>
+                                  <li>
+                                      <span class="modal_check-order">
+                                          <span class="modal_check-title">Сумма заказа</span>
+                                          <span class="modal_check-price">1 325 Р</span>
+                                      </span>
+                                  </li>
+                                  <li>
+                                      <span class="modal_check-order">
+                                          <span class="modal_check-title">Доставка</span>
+                                          <span class="modal_check-price">300 Р</span>
+                                      </span>
+                                  </li>
+                                  <li>
+                                    <span class="modal_check-order">
+                                        <span class="modal_check-title">Помыть бананы</span>
+                                        <span class="modal_check-price">36 P</span>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span class="modal_check-order">
+                                        <span class="modal_check-title">Помыть виноград красный чилийский</span>
+                                        <span class="modal_check-price">72 P</span>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <span class="modal_check-order">
+                                        <span class="modal_check-title hightliter">Ежевика в подарок</span>
+                                        <span class="modal_check-price">0 P</span>
+                                    </span>
+                                  </li>
+                              </ul>
+                              <div class="modal_check-order--total">
+                                <span class="modal_check-order-title">Итого</span>
+                                <span class="modal_check-order-price">110 625 Р</span>
+                              </div>
+                              <form action="" class="modal_check-order_form">
+                                <input type="text" value="spring2017" class="field_ok" id="before" required><label for="before">&nbsp;</label>
+                                <a href="#modal-reg--order" class="btn link-popup btn--lg">оформить заказ</a>
+                              </form>
+                              <div class="modal_check-order_end">
+                                <p>
+                                    Итоговая сумма может немного измениться в результате взвешивания.
+                                </p>
+                              </div>
                           </div>
                       </div>
                   </div>
@@ -643,26 +942,83 @@
                           <li>
                               <span class="modal_check-order">
                                   <span class="modal_check-title">Сумма заказа</span>
-                                  <span class="modal_check-price">1 325 <i class="icon-rub--brown"></i></span>
+                                  <span class="modal_check-price">1 325 P</span>
                               </span>
                           </li>
                           <li>
                               <span class="modal_check-order">
                                   <span class="modal_check-title">Доставка</span>
-                                  <span class="modal_check-price">300 <i class="icon-rub--brown"></i></span>
+                                  <span class="modal_check-price">300 P</span>
                               </span>
                           </li>
                           <li>
-                              <span class="modal_check-order--total">
-                                  <span class="modal_check-order-title">Итого</span>
-                                  <span class="modal_check-order-price">110 625 <i class="icon-rub--gray"></i></span>
+                              <span class="modal_check-order">
+                                  <span class="modal_check-title">Помыть бананы</span>
+                                  <span class="modal_check-price">36 P</span>
                               </span>
+                          </li>
+                          <li>
+                            <span class="modal_check-order">
+                                <span class="modal_check-title">Помыть виноград красный чилийский</span>
+                                <span class="modal_check-price">72 P</span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="modal_check-order">
+                                <span class="modal_check-title hightliter">Ежевика в подарок</span>
+                                <span class="modal_check-price">0 P</span>
+                            </span>
                           </li>
                       </ul>
                   </div>
-              </div>
-              <div class="modal_anymore">
-                  <button class="btn">закрыть</button>
+                  <div class="modal_check-total">
+                    <ul>
+                        <li>
+                            <span class="modal_check-order">
+                                <span class="modal_check-title">Сумма заказа</span>
+                                <span class="modal_check-price">1 325 P</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="modal_check-order">
+                                <span class="modal_check-title">Доставка</span>
+                                <span class="modal_check-price">300 P</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="modal_check-order">
+                                <span class="modal_check-title">Помыть бананы</span>
+                                <span class="modal_check-price">36 P</span>
+                            </span>
+                        </li>
+                        <li>
+                          <span class="modal_check-order">
+                              <span class="modal_check-title">Помыть виноград красный чилийский</span>
+                              <span class="modal_check-price">72 P</span>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="modal_check-order">
+                              <span class="modal_check-title hightliter">Ежевика в подарок</span>
+                              <span class="modal_check-price">0 P</span>
+                          </span>
+                        </li>
+                    </ul>
+                    <div class="modal_check-order--total">
+                      <span class="modal_check-order-title">Итого</span>
+                      <span class="modal_check-order-price">110 625 Р</span>
+                    </div>
+                    <form action="" class="modal_check-order_form">
+                      <input type="text" value="spring2017" id="before" class="field_invalid" required>
+                      <span></span>
+                      <a href="#modal-reg--order" class="btn link-popup btn--lg">оформить заказ</a>
+                    </form>
+                    <div class="modal_check-order_end">
+                      <p>
+                          Итоговая сумма может немного измениться в результате взвешивания.
+                      </p>
+                    </div>
+                  </div>
               </div>
           </div>
       </div>
